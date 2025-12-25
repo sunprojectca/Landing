@@ -3,17 +3,20 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-		<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','GA_MEASUREMENT_ID');</script>
 		
-		<title>Contact | Ferrum Data Works - Talk to an Engineer</title>
-		<meta name="description" content="Get in touch with Ferrum Data Works. Schedule a discovery call and explore how deterministic decision workflows can transform your enterprise operations." />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+		<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'GA_MEASUREMENT_ID');</script>
+		
+		<title>Contact Us | Ferrum Data Works</title>
+		<meta name="description" content="Start your 90-day journey to a production-grade decision system. Contact our engineering team." />
 		<link rel="canonical" href="http://my-ferrum-site.s3-website-us-west-1.amazonaws.com/contact" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		
 		<link href="../_app/immutable/assets/0.CEKsbleC.css" rel="stylesheet">
 	</head>
 	<body>
 		<div style="display: contents">
+			<!-- Navigation -->
 			<nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-2">
 				<div class="container">
 					<a class="navbar-brand d-flex align-items-center" href="/">
@@ -42,93 +45,73 @@
 				</div>
 			</nav>
 
-			<section id="contact" class="py-5">
+			<!-- Hero -->
+			<header class="bg-hero noise">
+				<div class="container py-5">
+					<div class="row justify-content-center">
+						<div class="col-lg-8 text-center">
+							<h1 class="display-5 fw-semibold">Let's Build Your Decision System</h1>
+							<p class="lead text-muted-2">Tell us about your challenge. We'll show you how to solve it deterministically.</p>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<!-- Contact Form -->
+			<section class="py-5">
 				<div class="container">
 					<div class="row justify-content-center">
 						<div class="col-lg-8">
-							<div class="text-center mb-5">
-								<h1 class="display-5 fw-semibold">Let's Talk</h1>
-								<p class="lead text-muted-2">Ready to build decision systems that scale? Start with a 30-minute discovery call.</p>
-							</div>
-
-							<div class="glass rounded-4 p-4 p-lg-5">
-								<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+							<div class="card-dark rounded-4 p-5">
+								<form>
 									<div class="row g-4">
 										<div class="col-md-6">
-											<label class="form-label text-muted-2">First Name</label>
-											<input type="text" name="firstName" class="form-control bg-dark border-secondary text-light" required>
+											<label class="form-label text-muted-2 small">First Name</label>
+											<input type="text" class="form-control bg-dark border-secondary text-light" placeholder="Jane">
 										</div>
 										<div class="col-md-6">
-											<label class="form-label text-muted-2">Last Name</label>
-											<input type="text" name="lastName" class="form-control bg-dark border-secondary text-light" required>
-										</div>
-										<div class="col-md-6">
-											<label class="form-label text-muted-2">Work Email</label>
-											<input type="email" name="email" class="form-control bg-dark border-secondary text-light" required>
-										</div>
-										<div class="col-md-6">
-											<label class="form-label text-muted-2">Company</label>
-											<input type="text" name="company" class="form-control bg-dark border-secondary text-light" required>
+											<label class="form-label text-muted-2 small">Last Name</label>
+											<input type="text" class="form-control bg-dark border-secondary text-light" placeholder="Doe">
 										</div>
 										<div class="col-12">
-											<label class="form-label text-muted-2">What's your biggest decision workflow challenge?</label>
-											<select name="challenge" class="form-select bg-dark border-secondary text-light">
-												<option value="">Select one...</option>
-												<option value="credit">Credit Decisioning / Underwriting</option>
-												<option value="claims">Claims Triage / Insurance</option>
-												<option value="compliance">Compliance / KYC Automation</option>
+											<label class="form-label text-muted-2 small">Work Email</label>
+											<input type="email" class="form-control bg-dark border-secondary text-light" placeholder="jane@company.com">
+										</div>
+										<div class="col-12">
+											<label class="form-label text-muted-2 small">What is your primary decision challenge?</label>
+											<select class="form-select bg-dark border-secondary text-light">
+												<option selected>Select a challenge...</option>
+												<option value="credit">Credit / Loan Decisioning</option>
+												<option value="claims">Insurance Claims Triage</option>
+												<option value="compliance">Compliance / KYC / AML</option>
 												<option value="moderation">Content Moderation</option>
-												<option value="routing">Operations Routing</option>
-												<option value="rag">RAG / Document Intelligence</option>
+												<option value="routing">Operations / Logistics Routing</option>
+												<option value="rag">Enterprise RAG / GenAI</option>
 												<option value="other">Other</option>
 											</select>
 										</div>
 										<div class="col-12">
-											<label class="form-label text-muted-2">Tell us more about your project</label>
-											<textarea name="message" rows="4" class="form-control bg-dark border-secondary text-light" placeholder="What are you trying to automate? What's your current stack? Any timeline constraints?"></textarea>
+											<label class="form-label text-muted-2 small">Message</label>
+											<textarea class="form-control bg-dark border-secondary text-light" rows="4" placeholder="Tell us a bit about your project timeline and goals..."></textarea>
 										</div>
 										<div class="col-12">
-											<button type="submit" class="btn btn-gradient btn-lg rounded-pill px-4 w-100">Schedule Discovery Call</button>
+											<button type="submit" class="btn btn-gradient w-100 py-3 rounded-3 fw-semibold">Send Message</button>
 										</div>
 									</div>
 								</form>
-							</div>
-
-							<div class="row g-4 mt-5">
-								<div class="col-md-4">
-									<div class="card-dark rounded-4 p-4 text-center h-100">
-										<i class="bi bi-clock fs-2 icon-brand-a mb-3"></i>
-										<h3 class="h6 mb-2">30-Minute Call</h3>
-										<p class="text-muted-2 small mb-0">Discovery and scoping. No sales pitch—just engineers.</p>
-									</div>
+								<div class="text-center mt-4">
+									<p class="small text-muted-2 mb-0">Prefer email? <a href="mailto:hello@ferrumdata.works" class="text-info">hello@ferrumdata.works</a></p>
 								</div>
-								<div class="col-md-4">
-									<div class="card-dark rounded-4 p-4 text-center h-100">
-										<i class="bi bi-calendar-check fs-2 icon-brand-b mb-3"></i>
-										<h3 class="h6 mb-2">90-Day Timeline</h3>
-										<p class="text-muted-2 small mb-0">From discovery to production for your first workflow.</p>
-									</div>
-								</div>
-								<div class="col-md-4">
-									<div class="card-dark rounded-4 p-4 text-center h-100">
-										<i class="bi bi-graph-up-arrow fs-2 icon-brand-c mb-3"></i>
-										<h3 class="h6 mb-2">200-500% ROI</h3>
-										<p class="text-muted-2 small mb-0">Typical Year 1 return on decision workflow automation.</p>
-									</div>
-								</div>
-							</div>
-
-							<div class="text-center mt-5">
-								<p class="text-muted-2">Prefer email? Reach us at <a href="mailto:hello@ferrumdata.works" class="text-decoration-none">hello@ferrumdata.works</a></p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 
+			<!-- Footer -->
 			<footer class="footer py-4">
 				<div class="container">
-					<div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-2">
+					<div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
 						<div class="text-muted-2 small">© 2025 Ferrum Data Works. All rights reserved.</div>
 						<div class="d-flex gap-3 small text-muted-2">
 							<a href="/solutions" class="text-decoration-none">Solutions</a>

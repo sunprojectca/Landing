@@ -3,17 +3,20 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
 		<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-		<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','GA_MEASUREMENT_ID');</script>
+		<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'GA_MEASUREMENT_ID');</script>
 		
 		<title>Solutions | Ferrum Data Works - Enterprise Decision Systems</title>
-		<meta name="description" content="Credit decisioning, claims triage, compliance automation, content moderation, operations routing, and RAG with evidence chains." />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="description" content="Deterministic AI workflows for Credit Decisioning, Claims Triage, Compliance, Content Moderation, and Operations Routing. Auditable, fast, and reliable." />
 		<link rel="canonical" href="http://my-ferrum-site.s3-website-us-west-1.amazonaws.com/solutions" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		
 		<link href="../_app/immutable/assets/0.CEKsbleC.css" rel="stylesheet">
 	</head>
 	<body>
 		<div style="display: contents">
+			<!-- Navigation -->
 			<nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-2">
 				<div class="container">
 					<a class="navbar-brand d-flex align-items-center" href="/">
@@ -42,240 +45,323 @@
 				</div>
 			</nav>
 
-			<section id="solutions" class="py-5">
-				<div class="container">
-					<div class="row mb-5">
-						<div class="col-lg-8">
-							<h1 class="display-5 fw-semibold">Solutions</h1>
-							<p class="lead text-muted-2">Decision workflows for operations that can't afford to fail.</p>
-						</div>
-					</div>
-
-					<!-- Credit Decisioning -->
-					<div class="row mb-5" id="credit">
-						<div class="col-lg-12">
-							<div class="glass rounded-4 p-4">
-								<div class="row">
-									<div class="col-lg-4 mb-4 mb-lg-0">
-										<i class="bi bi-credit-card-2-front fs-1 icon-brand-a mb-3"></i>
-										<h2 class="h4 fw-semibold">Credit Decisioning</h2>
-										<p class="text-muted-2">Real-time, auditable underwriting decisions.</p>
-									</div>
-									<div class="col-lg-8">
-										<div class="row g-3">
-											<div class="col-md-6">
-												<h3 class="h6 mb-2">The Problem</h3>
-												<p class="text-muted-2 small mb-0">You have a credit policy: income thresholds, DTI ratios, FICO cutoffs. But the model outputs "score: 0.67." Okay. Now what?</p>
-											</div>
-											<div class="col-md-6">
-												<h3 class="h6 mb-2">What the Regulator Says</h3>
-												<p class="text-muted-2 small mb-0">"Tell me why you denied this customer. Cite the rule. Show the logic." But your model doesn't cite rules. You don't have logic. You have a number.</p>
-											</div>
-											<div class="col-md-6">
-												<h3 class="h6 mb-2">The Ferrum Approach</h3>
-												<p class="text-muted-2 small mb-0">Rules first. AI optional. Complete trace of every decision.</p>
-											</div>
-											<div class="col-md-6">
-												<h3 class="h6 mb-2">Result</h3>
-												<p class="text-muted-2 small mb-0"><strong>Auditable decisions in under 200 ms.</strong> Logged to Redis. Queryable in real time. Ready for the examiner.</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Claims Triage -->
-					<div class="row mb-5" id="claims">
-						<div class="col-lg-12">
-							<div class="card-dark rounded-4 p-4">
-								<div class="row">
-									<div class="col-lg-4 mb-4 mb-lg-0">
-										<i class="bi bi-file-earmark-medical fs-1 icon-brand-b mb-3"></i>
-										<h2 class="h4 fw-semibold">Claims Triage</h2>
-										<p class="text-muted-2">Classify and route claims without bottlenecks.</p>
-									</div>
-									<div class="col-lg-8">
-										<div class="row g-3">
-											<div class="col-md-6">
-												<h3 class="h6 mb-2">The Problem</h3>
-												<p class="text-muted-2 small mb-0">Claims flood in. They're classified by ML. Routed by static rules. Reviewed manually. Every step is a latency bomb.</p>
-											</div>
-											<div class="col-md-6">
-												<h3 class="h6 mb-2">Why Workflow Matters</h3>
-												<p class="text-muted-2 small mb-0">AI can't tell you which claims are high-priority unless you define what high-priority means. And when that definition changes, you need to update the workflow—not retrain the model.</p>
-											</div>
-											<div class="col-md-6">
-												<h3 class="h6 mb-2">The Ferrum Approach</h3>
-												<p class="text-muted-2 small mb-0">Triage logic in visual flows. AI for classification. Redis Streams for routing. Sub-second triage to the right queue.</p>
-											</div>
-											<div class="col-md-6">
-												<h3 class="h6 mb-2">Result</h3>
-												<p class="text-muted-2 small mb-0"><strong>Claims reach adjusters faster.</strong> Complexity handled by logic—not luck.</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Compliance Automation -->
-					<div class="row mb-5" id="compliance">
-						<div class="col-lg-12">
-							<div class="glass rounded-4 p-4">
-								<div class="row">
-									<div class="col-lg-4 mb-4 mb-lg-0">
-										<i class="bi bi-shield-check fs-1 icon-brand-c mb-3"></i>
-										<h2 class="h4 fw-semibold">Compliance & KYC Automation</h2>
-										<p class="text-muted-2">Execute compliance logic with full traceability.</p>
-									</div>
-									<div class="col-lg-8">
-										<div class="row g-3">
-											<div class="col-md-6">
-												<h3 class="h6 mb-2">The Problem</h3>
-												<p class="text-muted-2 small mb-0">"We use AI to flag bad actors." Great. What's the policy? "We trained on historical data." What are the thresholds? "Umm…"</p>
-											</div>
-											<div class="col-md-6">
-												<h3 class="h6 mb-2">The Regulatory Reality</h3>
-												<p class="text-muted-2 small mb-0">AML/KYC rules are explicit. The logic must be testable. Reproducible. Explainable. This isn't "nice to have." It's table stakes.</p>
-											</div>
-											<div class="col-md-6">
-												<h3 class="h6 mb-2">The Ferrum Approach</h3>
-												<p class="text-muted-2 small mb-0">Compliance logic runs as deterministic flows. AI enriches (e.g., entity extraction), but rules decide.</p>
-											</div>
-											<div class="col-md-6">
-												<h3 class="h6 mb-2">Result</h3>
-												<p class="text-muted-2 small mb-0"><strong>Audit logs with full decision rationale.</strong> Regulator-ready. Model-agnostic.</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Content Moderation -->
-					<div class="row mb-5" id="moderation">
-						<div class="col-lg-12">
-							<div class="card-dark rounded-4 p-4">
-								<div class="row">
-									<div class="col-lg-4 mb-4 mb-lg-0">
-										<i class="bi bi-chat-right-text fs-1 icon-brand-a mb-3"></i>
-										<h2 class="h4 fw-semibold">Content Moderation</h2>
-										<p class="text-muted-2">Enforce policy with rules—not just AI predictions.</p>
-									</div>
-									<div class="col-lg-8">
-										<div class="row g-3">
-											<div class="col-md-6">
-												<h3 class="h6 mb-2">The Problem</h3>
-												<p class="text-muted-2 small mb-0">AI says it's toxic. What's your policy? What does "toxic" mean? Who approved that threshold? What's the appeals process?</p>
-											</div>
-											<div class="col-md-6">
-												<h3 class="h6 mb-2">Why This Matters</h3>
-												<p class="text-muted-2 small mb-0">Platform trust is eroded when moderation is opaque. Users challenge decisions. Regulators question enforcement. You need to show your work.</p>
-											</div>
-											<div class="col-md-6">
-												<h3 class="h6 mb-2">The Ferrum Approach</h3>
-												<p class="text-muted-2 small mb-0">Rules first: keyword blocklists, context rules, AI for edge cases. Escalation flows for appeals.</p>
-											</div>
-											<div class="col-md-6">
-												<h3 class="h6 mb-2">Result</h3>
-												<p class="text-muted-2 small mb-0"><strong>Transparent, contestable moderation.</strong> Faster response. Cleaner platform.</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Operations Routing -->
-					<div class="row mb-5" id="routing">
-						<div class="col-lg-12">
-							<div class="glass rounded-4 p-4">
-								<div class="row">
-									<div class="col-lg-4 mb-4 mb-lg-0">
-										<i class="bi bi-arrow-left-right fs-1 icon-brand-b mb-3"></i>
-										<h2 class="h4 fw-semibold">Operations Routing</h2>
-										<p class="text-muted-2">Route tasks to the right queue, instantly.</p>
-									</div>
-									<div class="col-lg-8">
-										<div class="row g-3">
-											<div class="col-md-6">
-												<h3 class="h6 mb-2">The Problem</h3>
-												<p class="text-muted-2 small mb-0">Tickets get routed by static rules or random assignment. The complex ones sit in the wrong queue. Customers escalate. Agents burn out.</p>
-											</div>
-											<div class="col-md-6">
-												<h3 class="h6 mb-2">Why This Matters</h3>
-												<p class="text-muted-2 small mb-0">Bad routing = bad SLAs = customer churn. Your ops team knows the logic—they just can't encode it.</p>
-											</div>
-											<div class="col-md-6">
-												<h3 class="h6 mb-2">The Ferrum Approach</h3>
-												<p class="text-muted-2 small mb-0">Routing logic lives in visual flows. Ingest event → classify (AI) → route (rules) → monitor (Redis Pub/Sub).</p>
-											</div>
-											<div class="col-md-6">
-												<h3 class="h6 mb-2">Result</h3>
-												<p class="text-muted-2 small mb-0"><strong>Tasks land in the right queue.</strong> First time. Every time.</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- RAG with Evidence Chains -->
-					<div class="row mb-5" id="rag">
-						<div class="col-lg-12">
-							<div class="card-dark rounded-4 p-4">
-								<div class="row">
-									<div class="col-lg-4 mb-4 mb-lg-0">
-										<i class="bi bi-diagram-3 fs-1 icon-brand-c mb-3"></i>
-										<h2 class="h4 fw-semibold">RAG with Evidence Chains</h2>
-										<p class="text-muted-2">Retrieval-augmented generation, with proof.</p>
-									</div>
-									<div class="col-lg-8">
-										<div class="row g-3">
-											<div class="col-md-6">
-												<h3 class="h6 mb-2">The Problem</h3>
-												<p class="text-muted-2 small mb-0">You've vectorized your docs. Your LLM returns answers. But where did it come from? Is it accurate? Can you cite it?</p>
-											</div>
-											<div class="col-md-6">
-												<h3 class="h6 mb-2">The Real Risk</h3>
-												<p class="text-muted-2 small mb-0">Enterprise RAG without evidence chains is a compliance nightmare. A hallucination isn't just embarrassing—it's a liability.</p>
-											</div>
-											<div class="col-md-6">
-												<h3 class="h6 mb-2">The Ferrum Approach</h3>
-												<p class="text-muted-2 small mb-0">RAG pipelines as flows. Every retrieval logged. Every generation traced. Every output auditable.</p>
-											</div>
-											<div class="col-md-6">
-												<h3 class="h6 mb-2">Result</h3>
-												<p class="text-muted-2 small mb-0"><strong>Answers you can cite.</strong> Outputs you can defend.</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
+			<!-- Hero -->
+			<header class="bg-hero noise">
+				<div class="container py-5">
 					<div class="row">
-						<div class="col-lg-12">
-							<div class="glass rounded-4 p-5 text-center">
-								<h2 class="fw-semibold mb-3">Ready to Build Your Decision System?</h2>
-								<p class="text-muted-2 mb-4">From discovery to production in 90 days.</p>
-								<a class="btn btn-gradient btn-lg rounded-pill px-4" href="/contact">Talk to an engineer</a>
+						<div class="col-lg-8">
+							<h1 class="display-5 fw-semibold">Enterprise Decision Systems</h1>
+							<p class="lead text-muted-2">Where deterministic logic meets AI. Auditable, scalable, and production-ready.</p>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<!-- Solution 1: Credit Decisioning -->
+			<section class="py-5">
+				<div class="container">
+					<div class="row align-items-center g-5">
+						<div class="col-lg-6">
+							<div class="pill mb-3"><i class="bi bi-bank"></i> Fintech</div>
+							<h2 class="fw-semibold mb-3">Real-Time Credit Decisioning</h2>
+							<p class="text-muted-2">Approve loans in milliseconds, not days. Combine hard rules (credit score > 650) with AI risk models, all with a complete audit trail for regulators.</p>
+							
+							<div class="card-dark rounded-4 p-4 mt-4">
+								<h5 class="h6 mb-3">The Ferrum Difference</h5>
+								<div class="d-flex gap-3 mb-3">
+									<div class="text-danger"><i class="bi bi-x-circle-fill"></i></div>
+									<div class="small text-muted-2"><strong>Old Way:</strong> Black-box AI model gives a score. Regulator asks "why?" and you can't answer.</div>
+								</div>
+								<div class="d-flex gap-3">
+									<div class="text-success"><i class="bi bi-check-circle-fill"></i></div>
+									<div class="small text-muted-2"><strong>Ferrum Way:</strong> Explicit workflow. Step 1: Check bureau. Step 2: Run income verification. Step 3: AI risk score (as advisor). Step 4: Final rule-based decision. Fully explainable.</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="glass rounded-4 p-4">
+								<h5 class="h6 mb-3">Measured Outcomes</h5>
+								<div class="row g-3">
+									<div class="col-6">
+										<div class="display-6 fw-bold text-gradient">300ms</div>
+										<div class="small text-muted-2">Decision latency</div>
+									</div>
+									<div class="col-6">
+										<div class="display-6 fw-bold text-gradient">100%</div>
+										<div class="small text-muted-2">Audit coverage</div>
+									</div>
+									<div class="col-6">
+										<div class="display-6 fw-bold text-gradient">40%</div>
+										<div class="small text-muted-2">Reduction in manual review</div>
+									</div>
+									<div class="col-6">
+										<div class="display-6 fw-bold text-gradient">0</div>
+										<div class="small text-muted-2">Unexplained rejections</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 
+			<!-- Solution 2: Claims Triage -->
+			<section class="py-5" style="background: rgba(255,255,255,0.02);">
+				<div class="container">
+					<div class="row align-items-center g-5 flex-lg-row-reverse">
+						<div class="col-lg-6">
+							<div class="pill mb-3"><i class="bi bi-shield-check"></i> Insurance</div>
+							<h2 class="fw-semibold mb-3">Automated Claims Triage</h2>
+							<p class="text-muted-2">Route claims instantly: Pay simple ones, investigate suspicious ones, flag complex ones for experts. Reduce backlog and improve customer satisfaction.</p>
+							
+							<div class="card-dark rounded-4 p-4 mt-4">
+								<h5 class="h6 mb-3">The Ferrum Difference</h5>
+								<div class="d-flex gap-3 mb-3">
+									<div class="text-danger"><i class="bi bi-x-circle-fill"></i></div>
+									<div class="small text-muted-2"><strong>Old Way:</strong> Manual review queue for everything. 3-week backlog. Customers churn.</div>
+								</div>
+								<div class="d-flex gap-3">
+									<div class="text-success"><i class="bi bi-check-circle-fill"></i></div>
+									<div class="small text-muted-2"><strong>Ferrum Way:</strong> Workflow filters claims. <$500 + clean history? Auto-pay. Photo metadata mismatch? Fraud team. Injury? Senior adjuster.</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="glass rounded-4 p-4">
+								<h5 class="h6 mb-3">Measured Outcomes</h5>
+								<div class="row g-3">
+									<div class="col-6">
+										<div class="display-6 fw-bold text-gradient">60%</div>
+										<div class="small text-muted-2">Claims auto-processed</div>
+									</div>
+									<div class="col-6">
+										<div class="display-6 fw-bold text-gradient">24h</div>
+										<div class="small text-muted-2">Reduction in cycle time</div>
+									</div>
+									<div class="col-6">
+										<div class="display-6 fw-bold text-gradient">15%</div>
+										<div class="small text-muted-2">Fraud detection uplift</div>
+									</div>
+									<div class="col-6">
+										<div class="display-6 fw-bold text-gradient">5x</div>
+										<div class="small text-muted-2">Adjuster efficiency</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Solution 3: Compliance & KYC -->
+			<section class="py-5">
+				<div class="container">
+					<div class="row align-items-center g-5">
+						<div class="col-lg-6">
+							<div class="pill mb-3"><i class="bi bi-file-earmark-text"></i> RegTech</div>
+							<h2 class="fw-semibold mb-3">Continuous Compliance & KYC</h2>
+							<p class="text-muted-2">Don't just check once. Monitor continuously. Orchestrate ID verification, sanctions screening, and transaction monitoring in a single, updateable workflow.</p>
+							
+							<div class="card-dark rounded-4 p-4 mt-4">
+								<h5 class="h6 mb-3">The Ferrum Difference</h5>
+								<div class="d-flex gap-3 mb-3">
+									<div class="text-danger"><i class="bi bi-x-circle-fill"></i></div>
+									<div class="small text-muted-2"><strong>Old Way:</strong> Spaghetti code connecting 5 different vendors. Hard to change rules when regulations update.</div>
+								</div>
+								<div class="d-flex gap-3">
+									<div class="text-success"><i class="bi bi-check-circle-fill"></i></div>
+									<div class="small text-muted-2"><strong>Ferrum Way:</strong> Visual workflow. Swap vendors easily. Update rules in minutes, not months. Version control for every rule change.</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="glass rounded-4 p-4">
+								<h5 class="h6 mb-3">Measured Outcomes</h5>
+								<div class="row g-3">
+									<div class="col-6">
+										<div class="display-6 fw-bold text-gradient">2 days</div>
+										<div class="small text-muted-2">To implement new reg rule</div>
+									</div>
+									<div class="col-6">
+										<div class="display-6 fw-bold text-gradient">100%</div>
+										<div class="small text-muted-2">Traceability of checks</div>
+									</div>
+									<div class="col-6">
+										<div class="display-6 fw-bold text-gradient">30%</div>
+										<div class="small text-muted-2">Vendor cost reduction</div>
+									</div>
+									<div class="col-6">
+										<div class="display-6 fw-bold text-gradient">Zero</div>
+										<div class="small text-muted-2">Compliance fines</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Solution 4: Content Moderation -->
+			<section class="py-5" style="background: rgba(255,255,255,0.02);">
+				<div class="container">
+					<div class="row align-items-center g-5 flex-lg-row-reverse">
+						<div class="col-lg-6">
+							<div class="pill mb-3"><i class="bi bi-chat-square-quote"></i> Media & Social</div>
+							<h2 class="fw-semibold mb-3">Hybrid Content Moderation</h2>
+							<p class="text-muted-2">Scale moderation without exploding costs. Use AI to filter the obvious (90%), and route the nuanced (10%) to human experts with context.</p>
+							
+							<div class="card-dark rounded-4 p-4 mt-4">
+								<h5 class="h6 mb-3">The Ferrum Difference</h5>
+								<div class="d-flex gap-3 mb-3">
+									<div class="text-danger"><i class="bi bi-x-circle-fill"></i></div>
+									<div class="small text-muted-2"><strong>Old Way:</strong> Send everything to BPO (slow, expensive) or trust AI blindly (brand risk).</div>
+								</div>
+								<div class="d-flex gap-3">
+									<div class="text-success"><i class="bi bi-check-circle-fill"></i></div>
+									<div class="small text-muted-2"><strong>Ferrum Way:</strong> Workflow: 1. Keyword blocklist (fast). 2. AI Sentiment (cheap). 3. Vision Model (expensive). 4. Human Review (only if needed).</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="glass rounded-4 p-4">
+								<h5 class="h6 mb-3">Measured Outcomes</h5>
+								<div class="row g-3">
+									<div class="col-6">
+										<div class="display-6 fw-bold text-gradient">95%</div>
+										<div class="small text-muted-2">Auto-moderation rate</div>
+									</div>
+									<div class="col-6">
+										<div class="display-6 fw-bold text-gradient">&lt;1s</div>
+										<div class="small text-muted-2">Time to takedown</div>
+									</div>
+									<div class="col-6">
+										<div class="display-6 fw-bold text-gradient">70%</div>
+										<div class="small text-muted-2">Cost savings vs manual</div>
+									</div>
+									<div class="col-6">
+										<div class="display-6 fw-bold text-gradient">High</div>
+										<div class="small text-muted-2">Moderator wellbeing</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Solution 5: Operations Routing -->
+			<section class="py-5">
+				<div class="container">
+					<div class="row align-items-center g-5">
+						<div class="col-lg-6">
+							<div class="pill mb-3"><i class="bi bi-truck"></i> Logistics & Ops</div>
+							<h2 class="fw-semibold mb-3">Intelligent Operations Routing</h2>
+							<p class="text-muted-2">Dispatch the right resource to the right place. Field service, delivery logistics, or customer support tickets.</p>
+							
+							<div class="card-dark rounded-4 p-4 mt-4">
+								<h5 class="h6 mb-3">The Ferrum Difference</h5>
+								<div class="d-flex gap-3 mb-3">
+									<div class="text-danger"><i class="bi bi-x-circle-fill"></i></div>
+									<div class="small text-muted-2"><strong>Old Way:</strong> Static rules ("If Zip=90210 then Team A"). Brittle and ignores real-time context.</div>
+								</div>
+								<div class="d-flex gap-3">
+									<div class="text-success"><i class="bi bi-check-circle-fill"></i></div>
+									<div class="small text-muted-2"><strong>Ferrum Way:</strong> Dynamic workflow. Check technician skill. Check traffic/location. Check inventory. Check SLA status. Optimize assignment.</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="glass rounded-4 p-4">
+								<h5 class="h6 mb-3">Measured Outcomes</h5>
+								<div class="row g-3">
+									<div class="col-6">
+										<div class="display-6 fw-bold text-gradient">20%</div>
+										<div class="small text-muted-2">Fuel/Travel savings</div>
+									</div>
+									<div class="col-6">
+										<div class="display-6 fw-bold text-gradient">30%</div>
+										<div class="small text-muted-2">SLA breach reduction</div>
+									</div>
+									<div class="col-6">
+										<div class="display-6 fw-bold text-gradient">15%</div>
+										<div class="small text-muted-2">First-time fix rate up</div>
+									</div>
+									<div class="col-6">
+										<div class="display-6 fw-bold text-gradient">Auto</div>
+										<div class="small text-muted-2">Rescheduling</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Solution 6: RAG with Evidence -->
+			<section class="py-5" style="background: rgba(255,255,255,0.02);">
+				<div class="container">
+					<div class="row align-items-center g-5 flex-lg-row-reverse">
+						<div class="col-lg-6">
+							<div class="pill mb-3"><i class="bi bi-robot"></i> GenAI</div>
+							<h2 class="fw-semibold mb-3">RAG with Evidence Chains</h2>
+							<p class="text-muted-2">Build Retrieval-Augmented Generation that is safe for enterprise. Enforce guardrails before and after the LLM call.</p>
+							
+							<div class="card-dark rounded-4 p-4 mt-4">
+								<h5 class="h6 mb-3">The Ferrum Difference</h5>
+								<div class="d-flex gap-3 mb-3">
+									<div class="text-danger"><i class="bi bi-x-circle-fill"></i></div>
+									<div class="small text-muted-2"><strong>Old Way:</strong> "Chat with your PDF" script. Hallucinates. Leaks PII. No audit trail.</div>
+								</div>
+								<div class="d-flex gap-3">
+									<div class="text-success"><i class="bi bi-check-circle-fill"></i></div>
+									<div class="small text-muted-2"><strong>Ferrum Way:</strong> Workflow: 1. PII Redaction. 2. Vector Search. 3. Context Filtering (Rules). 4. LLM Generation. 5. Hallucination Check (Fact vs Source). 6. Response.</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="glass rounded-4 p-4">
+								<h5 class="h6 mb-3">Measured Outcomes</h5>
+								<div class="row g-3">
+									<div class="col-6">
+										<div class="display-6 fw-bold text-gradient">0</div>
+										<div class="small text-muted-2">PII Leaks</div>
+									</div>
+									<div class="col-6">
+										<div class="display-6 fw-bold text-gradient">90%</div>
+										<div class="small text-muted-2">Relevance score</div>
+									</div>
+									<div class="col-6">
+										<div class="display-6 fw-bold text-gradient">100%</div>
+										<div class="small text-muted-2">Source citation</div>
+									</div>
+									<div class="col-6">
+										<div class="display-6 fw-bold text-gradient">Safe</div>
+										<div class="small text-muted-2">Enterprise ready</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- CTA -->
+			<section class="py-5">
+				<div class="container">
+					<div class="glass rounded-4 p-5 text-center">
+						<h2 class="fw-semibold mb-3">Have a specific use case?</h2>
+						<p class="lead text-muted-2 mb-4">Our engineers have built decision systems for Fortune 500s. Let's discuss yours.</p>
+						<div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
+							<a class="btn btn-gradient btn-lg rounded-pill px-4" href="/contact">Schedule a consultation</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Footer -->
 			<footer class="footer py-4">
 				<div class="container">
-					<div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-2">
+					<div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
 						<div class="text-muted-2 small">© 2025 Ferrum Data Works. All rights reserved.</div>
 						<div class="d-flex gap-3 small text-muted-2">
 							<a href="/solutions" class="text-decoration-none">Solutions</a>

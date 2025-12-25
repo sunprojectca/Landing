@@ -3,17 +3,20 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
 		<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-		<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','GA_MEASUREMENT_ID');</script>
+		<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'GA_MEASUREMENT_ID');</script>
 		
 		<title>How It Works | Ferrum Data Works - Decision Workflow Lifecycle</title>
-		<meta name="description" content="From business logic to auditable execution in six steps. Ingest, design, compile, execute, and audit decision workflows." />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="description" content="From business logic to auditable execution: Ingest, Design, Compile, Execute, Audit. Learn how Ferrum builds deterministic AI decision systems." />
 		<link rel="canonical" href="http://my-ferrum-site.s3-website-us-west-1.amazonaws.com/how-it-works" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		
 		<link href="../_app/immutable/assets/0.CEKsbleC.css" rel="stylesheet">
 	</head>
 	<body>
 		<div style="display: contents">
+			<!-- Navigation -->
 			<nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-2">
 				<div class="container">
 					<a class="navbar-brand d-flex align-items-center" href="/">
@@ -42,223 +45,283 @@
 				</div>
 			</nav>
 
-			<section id="how" class="py-5">
-				<div class="container">
-					<div class="row mb-5">
+			<!-- Hero -->
+			<header class="bg-hero noise">
+				<div class="container py-5">
+					<div class="row">
 						<div class="col-lg-8">
 							<h1 class="display-5 fw-semibold">The Decision Workflow Lifecycle</h1>
 							<p class="lead text-muted-2">From business logic to auditable execution in six steps.</p>
 						</div>
 					</div>
+				</div>
+			</header>
 
-					<div class="row mb-5">
-						<div class="col-lg-12">
-							<h2 class="fw-semibold mb-4">Architecture: Ingest → Design → Compile → Execute → Audit</h2>
-							<div class="row g-4">
-								<div class="col-md-4 col-lg-2">
-									<div class="p-3 rounded-4 card-dark h-100 text-center">
-										<i class="bi bi-cloud-download fs-3 icon-brand-a mb-2"></i>
-										<h3 class="h6">1. Ingest</h3>
-										<p class="text-muted-2 small mb-0">Data from your systems normalized via RDI or adapters</p>
-									</div>
-								</div>
-								<div class="col-md-4 col-lg-2">
-									<div class="p-3 rounded-4 card-dark h-100 text-center">
-										<i class="bi bi-box fs-3 icon-brand-b mb-2"></i>
-										<h3 class="h6">2. Objects</h3>
-										<p class="text-muted-2 small mb-0">Typed, validated inputs and outputs</p>
-									</div>
-								</div>
-								<div class="col-md-4 col-lg-2">
-									<div class="p-3 rounded-4 card-dark h-100 text-center">
-										<i class="bi bi-pencil-square fs-3 icon-brand-c mb-2"></i>
-										<h3 class="h6">3. Design</h3>
-										<p class="text-muted-2 small mb-0">Visual editor for business logic</p>
-									</div>
-								</div>
-								<div class="col-md-4 col-lg-2">
-									<div class="p-3 rounded-4 card-dark h-100 text-center">
-										<i class="bi bi-gear fs-3 icon-brand-a mb-2"></i>
-										<h3 class="h6">4. Compile</h3>
-										<p class="text-muted-2 small mb-0">Deterministic bytecode, no runtime interpretation</p>
-									</div>
-								</div>
-								<div class="col-md-4 col-lg-2">
-									<div class="p-3 rounded-4 card-dark h-100 text-center">
-										<i class="bi bi-play-circle fs-3 icon-brand-b mb-2"></i>
-										<h3 class="h6">5. Execute</h3>
-										<p class="text-muted-2 small mb-0">Redis Streams orchestrate immutable decisions</p>
-									</div>
-								</div>
-								<div class="col-md-4 col-lg-2">
-									<div class="p-3 rounded-4 card-dark h-100 text-center">
-										<i class="bi bi-file-earmark-check fs-3 icon-brand-c mb-2"></i>
-										<h3 class="h6">6. Audit</h3>
-										<p class="text-muted-2 small mb-0">Results to RedisJSON, dashboards via Pub/Sub</p>
-									</div>
-								</div>
+			<!-- Architecture Overview -->
+			<section class="py-5">
+				<div class="container">
+					<h2 class="fw-semibold mb-4">Architecture: Ingest → Design → Compile → Execute → Audit</h2>
+					<div class="row g-4">
+						<div class="col-md-6 col-lg-4">
+							<div class="card-dark rounded-4 p-4 h-100 lift">
+								<div class="pill mb-3"><i class="bi bi-1-circle"></i> Ingest</div>
+								<h4 class="h6">Data arrives from your systems</h4>
+								<p class="text-muted-2 small mb-0">Databases, APIs, event streams. Redis Data Integration or lightweight adapters normalize it.</p>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-4">
+							<div class="card-dark rounded-4 p-4 h-100 lift">
+								<div class="pill mb-3"><i class="bi bi-2-circle"></i> Object Library</div>
+								<h4 class="h6">Typed, validated inputs/outputs</h4>
+								<p class="text-muted-2 small mb-0">No loose JSON. No string parsing. Every field validated before processing.</p>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-4">
+							<div class="card-dark rounded-4 p-4 h-100 lift">
+								<div class="pill mb-3"><i class="bi bi-3-circle"></i> Flow Design</div>
+								<h4 class="h6">Visual editor for business logic</h4>
+								<p class="text-muted-2 small mb-0">Compose rules, decisions, and AI checkpoints. No code required.</p>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-4">
+							<div class="card-dark rounded-4 p-4 h-100 lift">
+								<div class="pill mb-3"><i class="bi bi-4-circle"></i> Compile</div>
+								<h4 class="h6">Deterministic bytecode</h4>
+								<p class="text-muted-2 small mb-0">Flows become executable graphs. No runtime interpretation. Zero surprises.</p>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-4">
+							<div class="card-dark rounded-4 p-4 h-100 lift">
+								<div class="pill mb-3"><i class="bi bi-5-circle"></i> Execution</div>
+								<h4 class="h6">Redis Streams orchestrate</h4>
+								<p class="text-muted-2 small mb-0">State machines execute. Decisions are immutable. Audit trails automatic.</p>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-4">
+							<div class="card-dark rounded-4 p-4 h-100 lift">
+								<div class="pill mb-3"><i class="bi bi-6-circle"></i> Artifacts</div>
+								<h4 class="h6">Results + Evidence</h4>
+								<p class="text-muted-2 small mb-0">Decisions written to RedisJSON, downstream systems, and live dashboards.</p>
 							</div>
 						</div>
 					</div>
+					<div class="mt-4 glass rounded-4 p-4">
+						<p class="text-muted-2 mb-0"><i class="bi bi-info-circle me-2"></i><strong>Why this matters:</strong> Each layer is intentional. No ambiguity. No surprises at 3 AM.</p>
+					</div>
+				</div>
+			</section>
 
-					<div class="row g-4 mb-5">
-						<div class="col-lg-6">
-							<div class="p-4 rounded-4 card-dark h-100">
-								<h3 class="h5 mb-3"><i class="bi bi-cloud-download icon-brand-a me-2"></i>Data Integration</h3>
-								<p class="text-muted-2 mb-3">Your decision inputs live in databases, data warehouses, or event streams. Ferrum bridges the gap.</p>
-								<h4 class="h6">Option A: Redis Data Integration (RDI)</h4>
-								<p class="text-muted-2 small mb-3">Connectors to Postgres, MySQL, Oracle, Mongo. Real-time sync. One configuration.</p>
-								<h4 class="h6">Option B: Lightweight Adapters</h4>
-								<p class="text-muted-2 small mb-0">REST API translators, scheduled sync, event stream consumers (Kafka, Kinesis).</p>
+			<!-- Data Integration -->
+			<section class="py-5" style="background: rgba(255,255,255,0.02);">
+				<div class="container">
+					<h2 class="fw-semibold mb-4">Connecting Your Legacy Systems</h2>
+					<div class="row g-4">
+						<div class="col-md-6">
+							<div class="card-dark rounded-4 p-4 h-100">
+								<h4 class="h5 mb-3"><i class="bi bi-database-fill-gear icon-brand-a me-2"></i>Redis Data Integration (RDI)</h4>
+								<p class="text-muted-2 small">For Redis Enterprise users: connectors to Postgres, MySQL, Oracle, MongoDB. Real-time sync. One configuration, no custom code.</p>
 							</div>
 						</div>
+						<div class="col-md-6">
+							<div class="card-dark rounded-4 p-4 h-100">
+								<h4 class="h5 mb-3"><i class="bi bi-plug-fill icon-brand-b me-2"></i>Lightweight Adapters</h4>
+								<p class="text-muted-2 small">For OSS Redis or cost-sensitive setups: REST API translators, scheduled syncs, event stream consumers (Kafka, Kinesis), custom handlers.</p>
+							</div>
+						</div>
+					</div>
+					<div class="row g-3 mt-4">
+						<div class="col-md-3"><div class="glass rounded-3 p-3 text-center"><i class="bi bi-check-circle-fill check-icon"></i><div class="small text-muted-2 mt-2">No data duplication</div></div></div>
+						<div class="col-md-3"><div class="glass rounded-3 p-3 text-center"><i class="bi bi-check-circle-fill check-icon"></i><div class="small text-muted-2 mt-2">Sub-millisecond latency</div></div></div>
+						<div class="col-md-3"><div class="glass rounded-3 p-3 text-center"><i class="bi bi-check-circle-fill check-icon"></i><div class="small text-muted-2 mt-2">Real-time updates</div></div></div>
+						<div class="col-md-3"><div class="glass rounded-3 p-3 text-center"><i class="bi bi-check-circle-fill check-icon"></i><div class="small text-muted-2 mt-2">Complete visibility</div></div></div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Type Safety -->
+			<section class="py-5">
+				<div class="container">
+					<h2 class="fw-semibold mb-4">Inputs and Outputs as Typed Objects</h2>
+					<div class="row g-4">
 						<div class="col-lg-6">
-							<div class="p-4 rounded-4 card-dark h-100">
-								<h3 class="h5 mb-3"><i class="bi bi-box icon-brand-b me-2"></i>Object Library & Type Safety</h3>
-								<p class="text-muted-2 mb-3">A decision requires inputs. Those inputs have structure. We enforce it.</p>
-								<div class="glass rounded-3 p-3">
-									<pre class="text-muted-2 small mb-0" style="white-space: pre-wrap;">Input: LoanApplication
+							<div class="card-dark rounded-4 p-4 h-100">
+								<h4 class="h6 mb-3">Example: Loan Application Input</h4>
+								<pre class="text-muted-2 small mb-0" style="background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 0.5rem; overflow-x: auto;">
+Input Object: LoanApplication
+  - applicant_id: UUID (required)
   - credit_score: 300–850 (required)
-  - annual_income: USD (required)
-  - loan_amount: USD (required)
-
-Output: UnderwritingDecision
-  - decision: approved | denied | escalate
-  - rationale: text (required)
-  - audit_timestamp: ISO 8601 (auto)</pre>
-								</div>
+  - annual_income: USD currency (required)
+  - employment_status: enum (required)
+  - loan_amount: USD currency (required)
+  - loan_term_months: 6–360 (required)
+  - existing_debt_ratio: 0–100% (required)</pre>
 							</div>
 						</div>
-					</div>
-
-					<div class="row mb-5">
-						<div class="col-lg-12">
-							<h2 class="fw-semibold mb-4">Flow Design & Visual Editor</h2>
-							<p class="text-muted-2 mb-4">You design flows in our visual editor. No code required. No deployment risk.</p>
-							<div class="row g-4">
-								<div class="col-md-6 col-lg-3">
-									<div class="p-3 rounded-4 card-dark h-100">
-										<h4 class="h6"><i class="bi bi-signpost-split me-2"></i>Decisions</h4>
-										<p class="text-muted-2 small mb-0">If/then/else based on object properties or Redis queries</p>
-									</div>
-								</div>
-								<div class="col-md-6 col-lg-3">
-									<div class="p-3 rounded-4 card-dark h-100">
-										<h4 class="h6"><i class="bi bi-calculator me-2"></i>Rules Engines</h4>
-										<p class="text-muted-2 small mb-0">Hardcoded deterministic logic: thresholds, formulas</p>
-									</div>
-								</div>
-								<div class="col-md-6 col-lg-3">
-									<div class="p-3 rounded-4 card-dark h-100">
-										<h4 class="h6"><i class="bi bi-robot me-2"></i>AI Nodes</h4>
-										<p class="text-muted-2 small mb-0">Invoke classifiers, extractors, rankers with fallback</p>
-									</div>
-								</div>
-								<div class="col-md-6 col-lg-3">
-									<div class="p-3 rounded-4 card-dark h-100">
-										<h4 class="h6"><i class="bi bi-arrow-repeat me-2"></i>Transformations</h4>
-										<p class="text-muted-2 small mb-0">Map, filter, aggregate objects</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="row g-4 mb-5">
 						<div class="col-lg-6">
-							<div class="p-4 rounded-4 card-dark h-100">
-								<h3 class="h5 mb-3"><i class="bi bi-gear icon-brand-a me-2"></i>Compilation</h3>
-								<p class="text-muted-2 mb-3">Flows are not interpreted at runtime. They are compiled.</p>
+							<div class="card-dark rounded-4 p-4 h-100">
+								<h4 class="h6 mb-3">Example: Underwriting Decision Output</h4>
+								<pre class="text-muted-2 small mb-0" style="background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 0.5rem; overflow-x: auto;">
+Output Object: UnderwritingDecision
+  - decision: enum [approved, denied, escalate]
+  - rationale: text (required)
+  - approved_amount: USD (conditional)
+  - conditions: list[text] (optional)
+  - audit_timestamp: ISO 8601 (auto)
+  - model_version: semver (auto)</pre>
+							</div>
+						</div>
+					</div>
+					<div class="row g-3 mt-4">
+						<div class="col-md-3"><div class="text-muted-2 small"><i class="bi bi-check-circle-fill check-icon me-2"></i>Flows cannot proceed without valid inputs</div></div>
+						<div class="col-md-3"><div class="text-muted-2 small"><i class="bi bi-check-circle-fill check-icon me-2"></i>Outputs guaranteed consistent</div></div>
+						<div class="col-md-3"><div class="text-muted-2 small"><i class="bi bi-check-circle-fill check-icon me-2"></i>Audit logs queryable</div></div>
+						<div class="col-md-3"><div class="text-muted-2 small"><i class="bi bi-check-circle-fill check-icon me-2"></i>Type mismatches fail fast</div></div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Flow Design -->
+			<section class="py-5" style="background: rgba(255,255,255,0.02);">
+				<div class="container">
+					<h2 class="fw-semibold mb-4">Building Deterministic Workflows</h2>
+					<p class="text-muted-2 mb-4">Design flows in our visual editor. No code required. No deployment risk.</p>
+					<div class="row g-3 mb-4">
+						<div class="col-6 col-md-3"><div class="card-dark rounded-3 p-3"><h6 class="small mb-1">Decisions</h6><p class="text-muted-2 small mb-0">if/then/else logic</p></div></div>
+						<div class="col-6 col-md-3"><div class="card-dark rounded-3 p-3"><h6 class="small mb-1">Rules Engines</h6><p class="text-muted-2 small mb-0">Thresholds, formulas</p></div></div>
+						<div class="col-6 col-md-3"><div class="card-dark rounded-3 p-3"><h6 class="small mb-1">AI Nodes</h6><p class="text-muted-2 small mb-0">Classifiers with fallback</p></div></div>
+						<div class="col-6 col-md-3"><div class="card-dark rounded-3 p-3"><h6 class="small mb-1">Transformations</h6><p class="text-muted-2 small mb-0">Map, filter, aggregate</p></div></div>
+						<div class="col-6 col-md-3"><div class="card-dark rounded-3 p-3"><h6 class="small mb-1">Parallel Branches</h6><p class="text-muted-2 small mb-0">Fan-out, collect</p></div></div>
+						<div class="col-6 col-md-3"><div class="card-dark rounded-3 p-3"><h6 class="small mb-1">Loops</h6><p class="text-muted-2 small mb-0">Iterate with early exit</p></div></div>
+						<div class="col-6 col-md-3"><div class="card-dark rounded-3 p-3"><h6 class="small mb-1">Error Handlers</h6><p class="text-muted-2 small mb-0">Escalate, retry, default</p></div></div>
+						<div class="col-6 col-md-3"><div class="card-dark rounded-3 p-3"><h6 class="small mb-1">Evidence Chains</h6><p class="text-muted-2 small mb-0">Record what decided</p></div></div>
+					</div>
+					<div class="glass rounded-4 p-4">
+						<p class="mb-0"><strong>Key property:</strong> <span class="text-muted-2">Every decision is reproducible. Feed the same input later, same output. Always.</span></p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Compilation -->
+			<section class="py-5">
+				<div class="container">
+					<h2 class="fw-semibold mb-4">From Design to Executable</h2>
+					<p class="text-muted-2 mb-4">Flows are not interpreted at runtime. They are <strong>compiled</strong>.</p>
+					<div class="row g-4">
+						<div class="col-md-6">
+							<div class="card-dark rounded-4 p-4 h-100">
+								<h4 class="h6 mb-3">What compilation does</h4>
 								<ul class="text-muted-2 small mb-0">
 									<li class="mb-2">Validates all paths (no dead code, no missing branches)</li>
 									<li class="mb-2">Optimizes execution (reorder steps, cache queries)</li>
-									<li class="mb-2">Generates audit metadata (which rule fired, why)</li>
+									<li class="mb-2">Generates audit metadata</li>
 									<li class="mb-2">Creates deterministic hashes (same flow = same hash)</li>
 									<li>Outputs bytecode or optimized dependency graph</li>
 								</ul>
 							</div>
 						</div>
-						<div class="col-lg-6">
-							<div class="p-4 rounded-4 card-dark h-100">
-								<h3 class="h5 mb-3"><i class="bi bi-play-circle icon-brand-b me-2"></i>Execution on Redis Streams</h3>
-								<p class="text-muted-2 mb-3">When a decision is triggered, Redis Streams orchestrate it.</p>
+						<div class="col-md-6">
+							<div class="card-dark rounded-4 p-4 h-100">
+								<h4 class="h6 mb-3">Why it matters</h4>
 								<ul class="text-muted-2 small mb-0">
-									<li class="mb-2"><strong>Trigger:</strong> Event written to Redis Stream</li>
-									<li class="mb-2"><strong>Consumer Group:</strong> Guarantees at-least-once processing</li>
-									<li class="mb-2"><strong>State Machine:</strong> Each step writes state (immutable log)</li>
-									<li class="mb-2"><strong>Queries:</strong> Flow steps query RedisJSON, invoke AI</li>
-									<li><strong>Output:</strong> Decision stored in Streams and RedisJSON</li>
+									<li class="mb-2">Zero runtime surprises</li>
+									<li class="mb-2">Impossible to accidentally change logic mid-execution</li>
+									<li class="mb-2">Compiled flows are versioned and immutable</li>
+									<li>Rollback is trivial (switch version flag)</li>
 								</ul>
-							</div>
-						</div>
-					</div>
-
-					<div class="row mb-5">
-						<div class="col-lg-12">
-							<h2 class="fw-semibold mb-4">Real-Time UI & Artifact Generation</h2>
-							<div class="row g-4">
-								<div class="col-lg-6">
-									<div class="p-4 rounded-4 glass h-100">
-										<h3 class="h5 mb-3"><i class="bi bi-broadcast icon-brand-c me-2"></i>Live Dashboards via Pub/Sub</h3>
-										<p class="text-muted-2 mb-0">As flows execute, decisions are broadcast in real time. WebSocket listeners update dashboards instantly. No polling. Sub-millisecond broadcast.</p>
-									</div>
-								</div>
-								<div class="col-lg-6">
-									<div class="p-4 rounded-4 glass h-100">
-										<h3 class="h5 mb-3"><i class="bi bi-file-earmark-text icon-brand-a me-2"></i>Decisions Generate Evidence</h3>
-										<p class="text-muted-2 mb-0">Decision ID, flow version, input snapshot, rule trace, model inference, confidence score, explainability, timestamp & duration.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="row mb-5">
-						<div class="col-lg-12">
-							<h2 class="fw-semibold mb-4">AI Integration: Where It Fits (And Where It Doesn't)</h2>
-							<div class="row g-4">
-								<div class="col-lg-6">
-									<div class="p-4 rounded-4 card-dark h-100">
-										<h3 class="h5 mb-3 text-success"><i class="bi bi-check-circle me-2"></i>AI goes here:</h3>
-										<ul class="text-muted-2 mb-0">
-											<li class="mb-2"><strong>Classification:</strong> "Is this fraud?"</li>
-											<li class="mb-2"><strong>Extraction:</strong> "What is the customer's intent?"</li>
-											<li class="mb-2"><strong>Ranking:</strong> "Rank tickets by urgency"</li>
-											<li class="mb-2"><strong>Recommendation:</strong> "What product to suggest?"</li>
-											<li><strong>Content Moderation:</strong> "Is this policy-violating?"</li>
-										</ul>
-									</div>
-								</div>
-								<div class="col-lg-6">
-									<div class="p-4 rounded-4 card-dark h-100">
-										<h3 class="h5 mb-3 text-danger"><i class="bi bi-x-circle me-2"></i>AI does NOT go here:</h3>
-										<ul class="text-muted-2 mb-0">
-											<li class="mb-2"><strong>Writing business logic:</strong> Encode rules instead</li>
-											<li class="mb-2"><strong>Making binary decisions:</strong> Use rules + AI confidence</li>
-											<li><strong>Generating audit-critical output:</strong> Generate from rules</li>
-										</ul>
-										<p class="text-muted-2 small mt-3 mb-0"><em>Your business logic decides. AI informs. The combination is auditable.</em></p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="col-lg-12">
-							<div class="glass rounded-4 p-5 text-center">
-								<h2 class="fw-semibold mb-3">Ready to Build Your Decision System?</h2>
-								<p class="text-muted-2 mb-4">Typical timeline: 6–16 weeks per business decision.</p>
-								<a class="btn btn-gradient btn-lg rounded-pill px-4" href="/contact">Talk to an engineer</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 
+			<!-- Execution -->
+			<section class="py-5" style="background: rgba(255,255,255,0.02);">
+				<div class="container">
+					<h2 class="fw-semibold mb-4">Deterministic, Auditable Decision Execution</h2>
+					<div class="row g-4 mb-4">
+						<div class="col-md-6">
+							<h4 class="h6 mb-3">How it works</h4>
+							<ol class="text-muted-2 small">
+								<li class="mb-2"><strong>Trigger:</strong> Event arrives (API, queue, scheduled). Written to Redis Stream.</li>
+								<li class="mb-2"><strong>Consumer Group:</strong> Execution engine reads, guarantees at-least-once processing.</li>
+								<li class="mb-2"><strong>State Machine:</strong> Compiled flow executes. Each step writes to Streams (immutable log).</li>
+								<li class="mb-2"><strong>Queries:</strong> Flow queries RedisJSON for inputs, cached rules, AI models.</li>
+								<li><strong>Output:</strong> Decision written to Streams and stored in RedisJSON.</li>
+							</ol>
+						</div>
+						<div class="col-md-6">
+							<h4 class="h6 mb-3">Why Streams instead of Kafka?</h4>
+							<ul class="text-muted-2 small">
+								<li class="mb-2">In-memory, sub-millisecond, still persistent</li>
+								<li class="mb-2">Latency matters more than geo-distributed failover</li>
+								<li class="mb-2">If you run Redis, no additional tool needed</li>
+								<li>Complete history stored in Redis; no separate audit DB</li>
+							</ul>
+						</div>
+					</div>
+					<div class="card-dark rounded-4 p-4">
+						<h4 class="h6 mb-3">Audit Trail Example</h4>
+						<pre class="text-muted-2 small mb-0" style="background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 0.5rem; overflow-x: auto;">
+Entry 1: { decision_id: "d-12345", flow_version: "underwriting-v3.2.1", timestamp: "2025-01-15T14:23:45Z" }
+Entry 2: { decision_id: "d-12345", step: "check_credit_score", result: "pass", credit_score: 750 }
+Entry 3: { decision_id: "d-12345", step: "invoke_ai_model", model: "fraud_classifier:v2.1", output: "low_risk" }
+Entry 4: { decision_id: "d-12345", final_decision: "approved", duration_ms: 120 }</pre>
+					</div>
+				</div>
+			</section>
+
+			<!-- AI Integration -->
+			<section class="py-5">
+				<div class="container">
+					<h2 class="fw-semibold mb-4">Where AI Fits (And Where It Doesn't)</h2>
+					<div class="row g-4">
+						<div class="col-md-6">
+							<div class="card-dark rounded-4 p-4 h-100">
+								<h4 class="h5 mb-3"><i class="bi bi-check-circle-fill check-icon me-2"></i>AI goes here</h4>
+								<ul class="text-muted-2 small mb-0">
+									<li class="mb-2"><strong>Classification:</strong> "Is this fraud?"</li>
+									<li class="mb-2"><strong>Extraction:</strong> "What is customer intent?"</li>
+									<li class="mb-2"><strong>Ranking:</strong> "Rank tickets by urgency"</li>
+									<li class="mb-2"><strong>Recommendation:</strong> "What product to suggest?"</li>
+									<li><strong>Content Moderation:</strong> "Policy violation?"</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="card-dark rounded-4 p-4 h-100">
+								<h4 class="h5 mb-3"><i class="bi bi-x-circle text-danger me-2"></i>AI does NOT go here</h4>
+								<ul class="text-muted-2 small mb-0">
+									<li class="mb-2"><strong>Writing business logic:</strong> Encode rules instead</li>
+									<li class="mb-2"><strong>Making binary decisions:</strong> Use rules + AI confidence</li>
+									<li><strong>Generating audit-critical text:</strong> Generate from rules</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="mt-4 glass rounded-4 p-4">
+						<p class="mb-0"><strong>Pattern:</strong> <span class="text-muted-2">AI as Advisor. Your business logic decides. AI informs. The combination is auditable.</span></p>
+					</div>
+				</div>
+			</section>
+
+			<!-- CTA -->
+			<section class="py-5" style="background: rgba(255,255,255,0.02);">
+				<div class="container">
+					<div class="glass rounded-4 p-5 text-center">
+						<h2 class="fw-semibold mb-3">Ready to Build Your Decision System?</h2>
+						<p class="lead text-muted-2 mb-4">90 days from concept to production. Let's map your first workflow.</p>
+						<div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
+							<a class="btn btn-gradient btn-lg rounded-pill px-4" href="/contact">Talk to an engineer</a>
+							<a class="btn btn-outline-soft btn-lg rounded-pill px-4" href="/solutions">See solutions</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Footer -->
 			<footer class="footer py-4">
 				<div class="container">
-					<div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-2">
+					<div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
 						<div class="text-muted-2 small">© 2025 Ferrum Data Works. All rights reserved.</div>
 						<div class="d-flex gap-3 small text-muted-2">
 							<a href="/solutions" class="text-decoration-none">Solutions</a>

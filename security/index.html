@@ -180,24 +180,16 @@
 						</div>
 						<div class="col-lg-7">
 							<div class="card-dark rounded-4 p-4">
-								<h4 class="h6 mb-3">The "Human in the Loop" Pattern</h4>
-								<p class="text-muted-2 small mb-3">For high-stakes decisions, regulators often require human oversight. Ferrum makes this native:</p>
-								<div class="d-flex align-items-center gap-3 mb-3">
-									<div class="badge bg-secondary rounded-pill">Step 1</div>
-									<div class="small text-muted-2">AI flags transaction as "Suspicious" (Score: 0.85)</div>
-								</div>
-								<div class="d-flex align-items-center gap-3 mb-3">
-									<div class="badge bg-secondary rounded-pill">Step 2</div>
-									<div class="small text-muted-2">Workflow routes to "Compliance Team" queue</div>
-								</div>
-								<div class="d-flex align-items-center gap-3 mb-3">
-									<div class="badge bg-secondary rounded-pill">Step 3</div>
-									<div class="small text-muted-2">Human reviews evidence, clicks "Approve" or "Reject"</div>
-								</div>
-								<div class="d-flex align-items-center gap-3">
-									<div class="badge bg-success rounded-pill">Audit</div>
-									<div class="small text-muted-2">Log records: AI Score, Human Decision, User ID, Timestamp.</div>
-								</div>
+								<h4 class="h6 mb-3">Regulatory Queries Become Trivial</h4>
+								<p class="text-muted-2 small mb-3">Most systems provide: "Denied on 12/15/2024." Ferrum provides the evidence.</p>
+								<p class="text-muted-2 small mb-2"><em>"Show me all loan denials from Q4 where credit score was < 650."</em></p>
+								<pre class="text-muted-2 small mb-0" style="background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 0.5rem; overflow-x: auto;">
+SELECT decision FROM redis_decisions
+WHERE flow = "underwriting:v2.1.0"
+  AND outcome = "denied"
+  AND credit_score < 650
+  AND date BETWEEN Q4_start AND Q4_end</pre>
+								<p class="text-muted-2 small mt-3 mb-0">Returns: 347 decisions. For each: applicant ID, exact inputs, exact rules that fired, exact model output, timestamp. Evidence complete.</p>
 							</div>
 						</div>
 					</div>

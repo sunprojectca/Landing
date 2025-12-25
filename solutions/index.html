@@ -82,6 +82,42 @@
 				</div>
 			</header>
 
+			<!-- Why Legacy Systems Are Stuck -->
+			<section class="py-5">
+				<div class="container">
+					<div class="row mb-4">
+						<div class="col-lg-8">
+							<h2 class="fw-semibold">Why Legacy Systems Are Stuck</h2>
+							<p class="lead text-muted-2">Enterprise systems are trapped because they optimized locally instead of globally.</p>
+						</div>
+					</div>
+					<div class="row g-4">
+						<div class="col-lg-6">
+							<div class="card-dark rounded-4 p-4 h-100">
+								<h4 class="h5 mb-3">The Cost of Fragmentation</h4>
+								<p class="text-muted-2 small">A bank's credit system runs on a legacy rules engine. Fraud detection runs on an ML model. Compliance uses manual workflows. None talk to each other.</p>
+								<ul class="text-muted-2 small mb-0">
+									<li class="mb-2"><strong>Data integration:</strong> Multiplied by 7 (one per system)</li>
+									<li class="mb-2"><strong>Audit scope:</strong> 7 systems, 7 logging formats</li>
+									<li class="mb-2"><strong>Model upgrades:</strong> 7 different ML pipelines</li>
+									<li><strong>Staff:</strong> Specialists per system</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="card-dark rounded-4 p-4 h-100">
+								<h4 class="h5 mb-3">The Ferrum Consolidation</h4>
+								<p class="text-muted-2 small">One visual flow designer. One execution engine (Redis Streams). One audit log. One compliance query interface.</p>
+								<div class="d-flex align-items-center gap-3 mt-3 p-3 rounded-3" style="background: rgba(34,197,94,0.1); border: 1px solid rgba(34,197,94,0.3);">
+									<i class="bi bi-graph-up-arrow text-success fs-4"></i>
+									<div class="small text-white">You go from <em>cost_per_workflow scales linearly</em> to <em>cost_per_workflow decreases with volume</em>.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
 			<!-- Solution 1: Credit Decisioning -->
 			<section class="py-5">
 				<div class="container">
@@ -364,6 +400,104 @@
 										<div class="small text-muted-2">Enterprise ready</div>
 									</div>
 								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- The Economics of Automation -->
+			<section class="py-5">
+				<div class="container">
+					<h2 class="fw-semibold mb-4">The Economics of Automation</h2>
+					<p class="lead text-muted-2 mb-5">Automation ROI is not about replacing people. It is about compressing cycle time, reducing error, and increasing throughput.</p>
+					
+					<div class="row g-5">
+						<div class="col-lg-6">
+							<h3 class="h5 mb-4">Real-World Example: Bank Loan Processing</h3>
+							<div class="card-dark rounded-4 p-4 mb-4">
+								<h5 class="h6 text-muted-2 mb-3">Baseline (Manual)</h5>
+								<ul class="list-unstyled small text-muted-2 mb-0">
+									<li class="mb-2 d-flex justify-content-between"><span>Cycle time:</span> <span class="text-white">14 days</span></li>
+									<li class="mb-2 d-flex justify-content-between"><span>Cost per decision:</span> <span class="text-white">$45</span></li>
+									<li class="mb-2 d-flex justify-content-between"><span>Default rate:</span> <span class="text-white">4.2%</span></li>
+									<li class="d-flex justify-content-between border-top border-secondary pt-2 mt-2"><span>Annual Cost (10k loans):</span> <span class="text-danger">$450,000</span></li>
+								</ul>
+							</div>
+							<div class="card-dark rounded-4 p-4">
+								<h5 class="h6 text-muted-2 mb-3">With Ferrum (Year 1)</h5>
+								<ul class="list-unstyled small text-muted-2 mb-0">
+									<li class="mb-2 d-flex justify-content-between"><span>Cycle time:</span> <span class="text-success">4 hours</span></li>
+									<li class="mb-2 d-flex justify-content-between"><span>Cost per decision:</span> <span class="text-success">$8</span></li>
+									<li class="mb-2 d-flex justify-content-between"><span>Default rate:</span> <span class="text-success">2.1%</span></li>
+									<li class="d-flex justify-content-between border-top border-secondary pt-2 mt-2"><span>Annual Cost:</span> <span class="text-white">$80,000</span></li>
+								</ul>
+								<div class="mt-3 pt-3 border-top border-secondary">
+									<div class="d-flex justify-content-between align-items-center">
+										<span class="small text-muted-2">Net Year 1 ROI:</span>
+										<span class="h4 text-success mb-0">258%</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-lg-6">
+							<h3 class="h5 mb-4">How to Calculate Your ROI</h3>
+							<div class="accordion" id="roiAccordion">
+								<div class="accordion-item bg-transparent border-secondary">
+									<h2 class="accordion-header">
+										<button class="accordion-button collapsed bg-transparent text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#step1">
+											1. Identify Automatable Tasks
+										</button>
+									</h2>
+									<div id="step1" class="accordion-collapse collapse" data-bs-parent="#roiAccordion">
+										<div class="accordion-body text-muted-2 small">
+											Automate tasks, not roles. Look for reviewing documents, applying rules, validating compliance, or generating reports. Must have clear inputs and outputs.
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item bg-transparent border-secondary">
+									<h2 class="accordion-header">
+										<button class="accordion-button collapsed bg-transparent text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#step2">
+											2. Establish Baseline Cost
+										</button>
+									</h2>
+									<div id="step2" class="accordion-collapse collapse" data-bs-parent="#roiAccordion">
+										<div class="accordion-body text-muted-2 small">
+											Capture labor cost per execution, volume, error/rework rate, and cycle-time cost (lost revenue due to delay).
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item bg-transparent border-secondary">
+									<h2 class="accordion-header">
+										<button class="accordion-button collapsed bg-transparent text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#step3">
+											3. Define Future State
+										</button>
+									</h2>
+									<div id="step3" class="accordion-collapse collapse" data-bs-parent="#roiAccordion">
+										<div class="accordion-body text-muted-2 small">
+											Conservative estimates: 70-90% reduction in time per task. Near-zero error rates. 10-100x throughput increase.
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item bg-transparent border-secondary">
+									<h2 class="accordion-header">
+										<button class="accordion-button collapsed bg-transparent text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#step4">
+											4. Calculate Hard ROI
+										</button>
+									</h2>
+									<div id="step4" class="accordion-collapse collapse" data-bs-parent="#roiAccordion">
+										<div class="accordion-body text-muted-2 small">
+											Labor efficiency + Error elimination + Throughput value + Risk reduction.
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="mt-4 p-3 rounded-3" style="background: rgba(124,58,237,0.1);">
+								<p class="small text-muted-2 mb-0"><strong>Typical ROI by Type:</strong><br>
+								• Document workflows: 300-800%<br>
+								• Revenue decisioning: >500%<br>
+								• Compliance: Justified by risk alone</p>
 							</div>
 						</div>
 					</div>

@@ -2,29 +2,36 @@
 
 > Deterministic AI Decision Systems for Enterprise
 
-## About
-Ferrum Data Works builds auditable, deterministic decision workflows that integrate AI as an advisor, not a black-box decision maker. We help regulated industries (Fintech, Insurance, Healthcare) deploy AI safely by wrapping probabilistic models in explicit, rule-based logic.
+## The Problem: The Decision System Trilemma
+Enterprises face an impossible choice for decision systems:
+1. **Black-box AI:** Fast but opaque. Regulatory liability.
+2. **Hardcoded Rules:** Auditable but brittle. Slow to change.
+3. **Enterprise AI Platforms:** 18-month integration hell.
 
-## Core Philosophy
-- **Deterministic Execution:** Input A + Logic B always equals Output C.
-- **Auditability:** Every decision step is logged, versioned, and explainable.
-- **Type Safety:** Strict input/output validation; no loose JSON.
-- **AI as Advisor:** AI models provide scores/classifications; business logic makes the final decision.
+## The Solution: Determinism + Fluidity
+Ferrum builds **deterministic decision systems that are also adaptive**.
+- **Architectural Insight:** Decisions are logical computations, not neural predictions.
+- **The Inversion:** AI is an *advisor* (confidence score), not the decision-maker. The rule decides.
+- **Execution Substrate:** Built on Redis Streams for sub-millisecond latency and immutable audit logs.
+
+## Core Capabilities
+- **Visual Design:** Business stakeholders design flows; we compile them to bytecode.
+- **Compliance:** "Show me all denials from Q4" is a trivial SQL-like query.
+- **Data Integration:** Redis Data Integration (RDI) or lightweight adapters.
+- **ROI:** 90 days to production. 200-500% Year 1 ROI.
 
 ## Architecture
-1. **Ingest:** Normalize data from DBs, APIs, and streams (Redis Data Integration).
-2. **Design:** Visual, no-code workflow editor for business logic.
-3. **Compile:** Flows are compiled to bytecode for zero-runtime interpretation errors.
-4. **Execute:** Redis Streams orchestrate state machines with sub-millisecond latency.
-5. **Audit:** Immutable logs of every step, input, and output.
+1. **Ingest:** Normalize data from DBs, APIs, and streams.
+2. **Design:** Visual workflow editor.
+3. **Compile:** Deterministic bytecode. Zero runtime surprises.
+4. **Execute:** Redis Streams state machine.
+5. **Audit:** Complete evidence chain for every decision.
 
-## Solutions
-- **Credit Decisioning:** Real-time loan approvals with full explainability.
-- **Claims Triage:** Automated insurance claim routing and fraud detection.
-- **Compliance & KYC:** Continuous monitoring and regulatory reporting.
-- **Content Moderation:** Hybrid AI + Human workflows for platform safety.
-- **Operations Routing:** Intelligent dispatch for logistics and field service.
-- **Enterprise RAG:** Retrieval-Augmented Generation with evidence chains and guardrails.
+## Use Cases
+- **Credit Decisioning:** Explainable loan approvals.
+- **Claims Triage:** Automated routing and fraud detection.
+- **Compliance:** Continuous KYC/AML monitoring.
+- **Content Moderation:** Hybrid AI/Human workflows.
 
 ## Contact
 - **Website:** http://my-ferrum-site.s3-website-us-west-1.amazonaws.com

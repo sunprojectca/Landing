@@ -3,81 +3,290 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		
-		<!-- Google Analytics - Replace GA_MEASUREMENT_ID with your ID -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-			gtag('config', 'GA_MEASUREMENT_ID');
-		</script>
+		<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','GA_MEASUREMENT_ID');</script>
 		
-		<!-- Primary SEO Meta Tags -->
-		<title>Security | Ferrum Data Works - Air-Gapped AI</title>
-		<meta name="title" content="Security | Ferrum Data Works - Air-Gapped AI" />
-		<meta name="description" content="Enterprise security with air-gapped local LLM deployments. Full data locality, access control, and auditability." />
-		<meta name="keywords" content="air-gapped AI, on-premise LLM, data security, local inference, secure AI deployment, enterprise security, data locality, offline AI" />
-		<meta name="author" content="Ferrum Data Works" />
-		<meta name="robots" content="index, follow" />
-		<link rel="canonical" href="http://my-ferrum-site.s3-website-us-west-1.amazonaws.com/security" />
-		
-		<!-- Favicon -->
+		<title>Security & Governance | Ferrum Data Works - Auditability by Design</title>
+		<meta name="description" content="Deterministic execution, reproducible results, version control, and compliance reporting. Enterprise governance built into the architecture." />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-		
-		<!-- Open Graph / Facebook -->
-		<meta property="og:type" content="website" />
-		<meta property="og:url" content="https://ferrumdata.works/security" />
-		<meta property="og:title" content="Security | Ferrum Data Works" />
-		<meta property="og:description" content="Enterprise-grade security with air-gapped local LLM deployments and full data locality." />
-		<meta property="og:site_name" content="Ferrum Data Works" />
-		
-		<!-- Twitter -->
-		<meta property="twitter:card" content="summary_large_image" />
-		<meta property="twitter:url" content="https://ferrumdata.works/security" />
-		<meta property="twitter:title" content="Security | Ferrum Data Works" />
-		<meta property="twitter:description" content="Enterprise-grade security with air-gapped local LLM deployments and full data locality." />
-		
+		<link rel="canonical" href="http://my-ferrum-site.s3-website-us-west-1.amazonaws.com/security" />
 		<link href="../_app/immutable/assets/0.CEKsbleC.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.iIZN2tar.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/B7N9y5Ot.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/DducnThf.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/B1FHrEXL.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.T3SzHaIW.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/DXagZ70N.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/BAxSKYF6.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/WV7PHaGy.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/CsFJ3omo.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/0.DkD84Q83.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/5.Basid9H1.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/DQhv2Mmt.js">
 	</head>
-	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents"><!--[--><!--[--><!----><nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-2"><div class="container"><a class="navbar-brand d-flex align-items-center" href="/"><svg class="brand-logo" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="logoGrad1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#7C3AED"></stop><stop offset="100%" stop-color="#06B6D4"></stop></linearGradient><linearGradient id="logoGrad2" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" stop-color="#06B6D4"></stop><stop offset="100%" stop-color="#22C55E"></stop></linearGradient><filter id="logoGlow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2" result="blur"></feGaussianBlur><feMerge><feMergeNode in="blur"></feMergeNode><feMergeNode in="SourceGraphic"></feMergeNode></feMerge></filter></defs><g filter="url(#logoGlow)"><path d="M24 4L42 14V34L24 44L6 34V14L24 4Z" stroke="url(#logoGrad1)" stroke-width="2" fill="none" opacity="0.6"></path><path d="M24 12L34 18V30L24 36L14 30V18L24 12Z" stroke="url(#logoGrad2)" stroke-width="2" fill="rgba(124,58,237,0.15)"></path><circle cx="24" cy="24" r="4" fill="url(#logoGrad1)"></circle><path d="M24 20V12M24 28V36" stroke="url(#logoGrad2)" stroke-width="1.5" opacity="0.8"></path><path d="M20.5 22L14 18M27.5 26L34 30" stroke="url(#logoGrad1)" stroke-width="1.5" opacity="0.8"></path><path d="M27.5 22L34 18M20.5 26L14 30" stroke="url(#logoGrad2)" stroke-width="1.5" opacity="0.8"></path><circle cx="24" cy="12" r="2" fill="#7C3AED"></circle><circle cx="34" cy="18" r="2" fill="#06B6D4"></circle><circle cx="34" cy="30" r="2" fill="#22C55E"></circle><circle cx="24" cy="36" r="2" fill="#06B6D4"></circle><circle cx="14" cy="30" r="2" fill="#7C3AED"></circle><circle cx="14" cy="18" r="2" fill="#22C55E"></circle></g></svg> <span class="brand-name">FERRUM DATA WORKS</span></a> <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button> <div class="collapse navbar-collapse" id="nav"><ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2"><li class="nav-item"><a class="nav-link text-muted-2" href="/solutions">Solutions</a></li> <li class="nav-item"><a class="nav-link text-muted-2" href="/how-it-works">How it works</a></li> <li class="nav-item"><a class="nav-link text-muted-2" href="/security">Security</a></li> <li class="nav-item"><a class="nav-link text-muted-2" href="/contact">Contact</a></li> <li class="nav-item ms-lg-2"><a class="btn btn-outline-soft rounded-pill px-3" href="/contact">Talk to an engineer</a></li> <li class="nav-item ms-lg-2"><a class="btn btn-gradient rounded-pill px-3" href="/contact">Get started</a></li></ul></div></div></nav> <!----><section id="security"><div class="container"><div class="row g-4 align-items-center"><div class="col-lg-6"><h2 class="fw-semibold">Security &amp; control, by design</h2> <p class="lead">Some environments cannot tolerate cloud dependencies. We support fully local, air-gapped
-                    deployments.</p> <div class="d-flex flex-wrap gap-2"><span class="pill"><i class="bi bi-wifi-off"></i> No outbound internet</span> <span class="pill"><i class="bi bi-key"></i> Access control</span> <span class="pill"><i class="bi bi-journal-check"></i> Auditability</span> <span class="pill"><i class="bi bi-lock"></i> Data locality</span></div></div> <div class="col-lg-6"><div class="card-dark rounded-4 p-4 lift"><h3 class="h5">Air-gapped local LLM stack</h3> <p class="text-muted-2">Local inference + local retrieval. Predictable costs. Deterministic workflows.</p> <ul class="text-muted-2 small mb-0"><li>On-prem Redis + vector retrieval</li> <li>Local embedding + inference pipeline</li> <li>Tool execution sandboxing and logging</li> <li>Offline updates and controlled releases</li></ul></div></div></div></div></section><!----><!----> <footer class="footer py-4"><div class="container"><div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-2"><div class="text-muted-2 small">© <span id="year">2025</span> Ferrum Data Works. All rights reserved.</div> <div class="d-flex gap-3 small text-muted-2"><a href="/solutions" class="text-decoration-none">Solutions</a> <a href="/how-it-works" class="text-decoration-none">How it works</a> <a href="/security" class="text-decoration-none">Security</a> <a href="/contact" class="text-decoration-none">Contact</a></div></div></div></footer><!----><!--]--> <!--[!--><!--]--><!--]-->
-			
-			<script>
-				{
-					__sveltekit_1veh7ax = {
-						base: new URL("..", location).pathname.slice(0, -1)
-					};
+	<body>
+		<div style="display: contents">
+			<nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-2">
+				<div class="container">
+					<a class="navbar-brand d-flex align-items-center" href="/">
+						<svg class="brand-logo" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<defs>
+								<linearGradient id="logoGrad1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#7C3AED"></stop><stop offset="100%" stop-color="#06B6D4"></stop></linearGradient>
+								<linearGradient id="logoGrad2" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" stop-color="#06B6D4"></stop><stop offset="100%" stop-color="#22C55E"></stop></linearGradient>
+							</defs>
+							<path d="M24 4L42 14V34L24 44L6 34V14L24 4Z" stroke="url(#logoGrad1)" stroke-width="2" fill="none" opacity="0.6"></path>
+							<path d="M24 12L34 18V30L24 36L14 30V18L24 12Z" stroke="url(#logoGrad2)" stroke-width="2" fill="rgba(124,58,237,0.15)"></path>
+							<circle cx="24" cy="24" r="4" fill="url(#logoGrad1)"></circle>
+						</svg>
+						<span class="brand-name">FERRUM DATA WORKS</span>
+					</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+					<div class="collapse navbar-collapse" id="nav">
+						<ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+							<li class="nav-item"><a class="nav-link text-muted-2" href="/solutions">Solutions</a></li>
+							<li class="nav-item"><a class="nav-link text-muted-2" href="/how-it-works">How it works</a></li>
+							<li class="nav-item"><a class="nav-link text-muted-2" href="/security">Security</a></li>
+							<li class="nav-item"><a class="nav-link text-muted-2" href="/contact">Contact</a></li>
+							<li class="nav-item ms-lg-2"><a class="btn btn-outline-soft rounded-pill px-3" href="/contact">Talk to an engineer</a></li>
+							<li class="nav-item ms-lg-2"><a class="btn btn-gradient rounded-pill px-3" href="/contact">Get started</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
 
-					const element = document.currentScript.parentElement;
+			<section id="security" class="py-5">
+				<div class="container">
+					<div class="row mb-5">
+						<div class="col-lg-8">
+							<h1 class="display-5 fw-semibold">Security & Governance</h1>
+							<p class="lead text-muted-2">Auditability isn't a feature. It's the architecture.</p>
+						</div>
+					</div>
 
-					Promise.all([
-						import("../_app/immutable/entry/start.iIZN2tar.js"),
-						import("../_app/immutable/entry/app.T3SzHaIW.js")
-					]).then(([kit, app]) => {
-						kit.start(app, element, {
-							node_ids: [0, 5],
-							data: [null,null],
-							form: null,
-							error: null
-						});
-					});
-				}
-			</script>
+					<!-- The Audit Problem -->
+					<div class="row mb-5">
+						<div class="col-lg-12">
+							<div class="glass rounded-4 p-4">
+								<h2 class="h4 fw-semibold mb-4"><i class="bi bi-exclamation-triangle icon-brand-a me-2"></i>The Audit Problem with Black-Box AI</h2>
+								<div class="row g-4">
+									<div class="col-md-6">
+										<p class="text-muted-2">AI-first systems are opaque by default. The model outputs a prediction. The system acts. The user asks: "Why did this happen?" And no one can answer.</p>
+									</div>
+									<div class="col-md-6">
+										<div class="card-dark rounded-3 p-3">
+											<h3 class="h6 mb-2">When auditors arrive, they don't ask:</h3>
+											<ul class="text-muted-2 small mb-0">
+												<li>"What's your model accuracy?"</li>
+											</ul>
+											<h3 class="h6 mt-3 mb-2">They ask:</h3>
+											<ul class="text-muted-2 small mb-0">
+												<li>"Can you reproduce decision #487391?"</li>
+												<li>"What policy was in effect on March 3rd?"</li>
+												<li>"Why was this customer denied?"</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<p class="text-muted-2 mt-4 mb-0"><strong>If you can't answer those questions in seconds, you're exposed.</strong></p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Six Pillars -->
+					<div class="row mb-5">
+						<div class="col-lg-12">
+							<h2 class="h4 fw-semibold mb-4">Six Pillars of Governance</h2>
+							<div class="row g-4">
+								<!-- Pillar 1 -->
+								<div class="col-md-6 col-lg-4">
+									<div class="card-dark rounded-4 p-4 h-100">
+										<i class="bi bi-check2-square fs-3 icon-brand-a mb-3"></i>
+										<h3 class="h5">1. Auditability by Design</h3>
+										<p class="text-muted-2 small mb-3">Every decision generates an evidence artifact:</p>
+										<ul class="text-muted-2 small mb-0">
+											<li>Decision ID (unique, immutable)</li>
+											<li>Flow version hash</li>
+											<li>Input snapshot</li>
+											<li>Rule trace</li>
+											<li>AI inference (if any)</li>
+											<li>Outcome + rationale</li>
+											<li>Timestamp & duration</li>
+										</ul>
+									</div>
+								</div>
+
+								<!-- Pillar 2 -->
+								<div class="col-md-6 col-lg-4">
+									<div class="card-dark rounded-4 p-4 h-100">
+										<i class="bi bi-arrow-repeat fs-3 icon-brand-b mb-3"></i>
+										<h3 class="h5">2. Reproducibility</h3>
+										<p class="text-muted-2 small mb-3">Same input + same flow version = same output.</p>
+										<p class="text-muted-2 small mb-0">This isn't a testing feature. This is enforcement. Flows are compiled. Execution is deterministic. You can replay any decision from history and get the exact same result.</p>
+									</div>
+								</div>
+
+								<!-- Pillar 3 -->
+								<div class="col-md-6 col-lg-4">
+									<div class="card-dark rounded-4 p-4 h-100">
+										<i class="bi bi-file-text fs-3 icon-brand-c mb-3"></i>
+										<h3 class="h5">3. Explicit, Not Implicit</h3>
+										<p class="text-muted-2 small mb-3">Every rule must be declared. Nothing is inferred unless you design a node for inference. No surprise behavior.</p>
+										<p class="text-muted-2 small mb-0">When you update a flow, the diff is visible. You can see exactly what changed and when.</p>
+									</div>
+								</div>
+
+								<!-- Pillar 4 -->
+								<div class="col-md-6 col-lg-4">
+									<div class="card-dark rounded-4 p-4 h-100">
+										<i class="bi bi-lock fs-3 icon-brand-a mb-3"></i>
+										<h3 class="h5">4. Isolation & Access Control</h3>
+										<p class="text-muted-2 small mb-3">Role-based access (RBAC) controls who can:</p>
+										<ul class="text-muted-2 small mb-0">
+											<li>Create flows</li>
+											<li>Edit flows</li>
+											<li>Deploy flows</li>
+											<li>View decision logs</li>
+											<li>Export audit artifacts</li>
+										</ul>
+									</div>
+								</div>
+
+								<!-- Pillar 5 -->
+								<div class="col-md-6 col-lg-4">
+									<div class="card-dark rounded-4 p-4 h-100">
+										<i class="bi bi-git fs-3 icon-brand-b mb-3"></i>
+										<h3 class="h5">5. Version Control</h3>
+										<p class="text-muted-2 small mb-3">Every flow has a version. Every version has a hash. Deployments are tagged.</p>
+										<p class="text-muted-2 small mb-0">You can answer: "What logic was in effect at 3:14am on March 7th?" With proof.</p>
+									</div>
+								</div>
+
+								<!-- Pillar 6 -->
+								<div class="col-md-6 col-lg-4">
+									<div class="card-dark rounded-4 p-4 h-100">
+										<i class="bi bi-file-earmark-bar-graph fs-3 icon-brand-c mb-3"></i>
+										<h3 class="h5">6. Compliance Reporting</h3>
+										<p class="text-muted-2 small mb-3">Built-in exports for:</p>
+										<ul class="text-muted-2 small mb-0">
+											<li>Regulatory exam prep</li>
+											<li>Internal audit</li>
+											<li>SOX/SOC2 evidence</li>
+											<li>Dispute resolution</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Redis Security -->
+					<div class="row mb-5">
+						<div class="col-lg-12">
+							<h2 class="h4 fw-semibold mb-4">Redis Enterprise Security</h2>
+							<div class="glass rounded-4 p-4">
+								<div class="row g-4">
+									<div class="col-md-6">
+										<h3 class="h6 mb-3">Encryption</h3>
+										<ul class="text-muted-2 small mb-0">
+											<li class="mb-2">TLS in transit (always on)</li>
+											<li class="mb-2">AES-256 at rest</li>
+											<li>Customer-managed keys (BYOK)</li>
+										</ul>
+									</div>
+									<div class="col-md-6">
+										<h3 class="h6 mb-3">Network Isolation</h3>
+										<ul class="text-muted-2 small mb-0">
+											<li class="mb-2">VPC-native deployment</li>
+											<li class="mb-2">Private Link / Private Endpoints</li>
+											<li>No public ingress</li>
+										</ul>
+									</div>
+									<div class="col-md-6">
+										<h3 class="h6 mb-3">Access Control</h3>
+										<ul class="text-muted-2 small mb-0">
+											<li class="mb-2">Role-based ACLs</li>
+											<li class="mb-2">SAML/SSO integration</li>
+											<li>Audit logging on all access</li>
+										</ul>
+									</div>
+									<div class="col-md-6">
+										<h3 class="h6 mb-3">Compliance</h3>
+										<ul class="text-muted-2 small mb-0">
+											<li class="mb-2">SOC2 Type II</li>
+											<li class="mb-2">ISO 27001</li>
+											<li>HIPAA-eligible</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Comparison -->
+					<div class="row mb-5">
+						<div class="col-lg-12">
+							<h2 class="h4 fw-semibold mb-4">Traditional ML Pipeline vs. Ferrum</h2>
+							<div class="card-dark rounded-4 p-4">
+								<div class="table-responsive">
+									<table class="table table-dark mb-0">
+										<thead>
+											<tr>
+												<th class="border-0">Capability</th>
+												<th class="border-0">Traditional ML Pipeline</th>
+												<th class="border-0">Ferrum Decision Workflow</th>
+											</tr>
+										</thead>
+										<tbody class="text-muted-2">
+											<tr>
+												<td>Decision explainability</td>
+												<td><i class="bi bi-x-circle text-danger me-2"></i>Opaque</td>
+												<td><i class="bi bi-check-circle text-success me-2"></i>Full rule trace</td>
+											</tr>
+											<tr>
+												<td>Reproducibility</td>
+												<td><i class="bi bi-x-circle text-danger me-2"></i>Partial (drift)</td>
+												<td><i class="bi bi-check-circle text-success me-2"></i>Guaranteed</td>
+											</tr>
+											<tr>
+												<td>Version control</td>
+												<td><i class="bi bi-dash-circle text-warning me-2"></i>Model versioning only</td>
+												<td><i class="bi bi-check-circle text-success me-2"></i>Full flow versioning</td>
+											</tr>
+											<tr>
+												<td>Audit artifacts</td>
+												<td><i class="bi bi-x-circle text-danger me-2"></i>Manual logging</td>
+												<td><i class="bi bi-check-circle text-success me-2"></i>Auto-generated</td>
+											</tr>
+											<tr>
+												<td>Policy updates</td>
+												<td><i class="bi bi-dash-circle text-warning me-2"></i>Retraining</td>
+												<td><i class="bi bi-check-circle text-success me-2"></i>Edit flow, redeploy</td>
+											</tr>
+											<tr>
+												<td>Compliance reporting</td>
+												<td><i class="bi bi-x-circle text-danger me-2"></i>Custom tooling</td>
+												<td><i class="bi bi-check-circle text-success me-2"></i>Built-in exports</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="glass rounded-4 p-5 text-center">
+								<h2 class="fw-semibold mb-3">Ready for the Auditors?</h2>
+								<p class="text-muted-2 mb-4">Build decision systems that answer "why" before anyone asks.</p>
+								<a class="btn btn-gradient btn-lg rounded-pill px-4" href="/contact">Talk to an engineer</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<footer class="footer py-4">
+				<div class="container">
+					<div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-2">
+						<div class="text-muted-2 small">© 2025 Ferrum Data Works. All rights reserved.</div>
+						<div class="d-flex gap-3 small text-muted-2">
+							<a href="/solutions" class="text-decoration-none">Solutions</a>
+							<a href="/how-it-works" class="text-decoration-none">How it works</a>
+							<a href="/security" class="text-decoration-none">Security</a>
+							<a href="/contact" class="text-decoration-none">Contact</a>
+						</div>
+					</div>
+				</div>
+			</footer>
 		</div>
 	</body>
 </html>

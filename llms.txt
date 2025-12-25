@@ -1,0 +1,33 @@
+# Ferrum Data Works
+
+> AI-ready data infrastructure and Redis acceleration services
+
+## About
+Ferrum Data Works transforms legacy infrastructure into AI-ready, zero-latency data systems using Redis, in-memory databases, caching, vector search, and integrated AI pipelines.
+
+## Services
+- Financial Model Generation - Native .xlsx with working formulas
+- Document Ingestion - PDF, scans, rent rolls to structured data
+- Financial Math & Validation - Zero-hallucination arithmetic
+- Writing Style Emulation - Match your firm's tone
+- Research & Due Diligence - Automated data collection
+- Institutional Memory (RAG) - Search across years of documents
+- Agent Orchestration - Multi-step AI workflows
+- On-Prem & Air-Gapped - Local LLM deployment
+- Real-Time Data Pipelines - CDC and event sourcing
+
+## Target Industries
+- Private Equity & VC
+- Commercial Real Estate
+- Financial Services
+- Enterprise Legacy Systems
+
+## Contact
+Visit: /contact
+
+## Links
+- Homepage: /
+- Solutions: /solutions
+- How It Works: /how-it-works
+- Security: /security
+- Contact: /contact

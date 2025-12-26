@@ -43,6 +43,24 @@
 		</script>
 
 		<link href="../_app/immutable/assets/0.CEKsbleC.css" rel="stylesheet">
+		<style>
+			html {
+				background: #070A12 !important;
+			}
+			body {
+				background: transparent !important;
+				position: relative;
+				z-index: 1;
+			}
+			#bg-canvas {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				z-index: -1;
+			}
+		</style>
 	</head>
 	<body>
 		<div style="display: contents">
@@ -224,5 +242,85 @@ WHERE flow = "underwriting:v2.1.0"
 				</div>
 			</footer>
 		</div>
+		<!-- Background Scripts -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/2.0.0/trianglify.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
+		
+		<script>
+			$(document).ready(function() {
+				// Ferrum Brand Colors
+				var brandColors = ["#7C3AED", "#06B6D4", "#22C55E", "#1e293b"];
+				
+				// Create container
+				var $bg = $('<div id="bg-canvas" style="position:fixed; top:0; left:0; width:100%; height:100%; z-index:0; overflow:hidden;"></div>');
+				$('body').prepend($bg);
+
+				function createPattern() {
+					// Randomize cell size slightly for "breathing" effect
+					var cellSize = 50 + (Math.random() * 30);
+					
+					var pattern = Trianglify({
+						x_colors: brandColors,
+						y_colors: ["#0f172a", "#1e293b"], // Dark theme base
+						noiseIntensity: 0,
+						cell_size: cellSize,
+						width: window.innerWidth + 100, // Extra for movement
+						height: window.innerHeight + 100
+					});
+					return pattern.svg();
+				}
+
+				function animateBackground() {
+					var svg = createPattern();
+					
+					// Random start position for subtle movement
+					var startX = -(Math.random() * 50);
+					var startY = -(Math.random() * 50);
+					
+					$(svg).css({
+						position: 'absolute',
+						top: startX + 'px',
+						left: startY + 'px',
+						width: 'calc(100% + 100px)',
+						height: 'calc(100% + 100px)',
+						opacity: 0
+					});
+					
+					$bg.append(svg);
+					
+					// Fade in and slowly pan
+					$(svg).velocity({ 
+						opacity: 0.5,
+						top: (startX - 20) + "px", // Pan slightly
+						left: (startY - 20) + "px"
+					}, { 
+						duration: 4000, 
+						easing: "swing",
+						complete: function() {
+							// Remove old SVGs, keep the new one
+							$bg.children().not(svg).remove();
+						}
+					});
+				}
+
+				// Initial
+				animateBackground();
+
+				// Loop animation
+				setInterval(animateBackground, 4000);
+
+				// Handle resize
+				var resizeTimer;
+				$(window).on('resize', function() {
+					clearTimeout(resizeTimer);
+					resizeTimer = setTimeout(function() {
+						$bg.empty();
+						animateBackground();
+					}, 200);
+				});
+			});
+		</script>
 	</body>
 </html>

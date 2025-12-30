@@ -4,51 +4,377 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		
+		<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+		<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'GA_MEASUREMENT_ID');</script>
+		
+		<title>How It Works | Ferrum Data Works - Decision Workflow Lifecycle</title>
+		<meta name="description" content="From business logic to auditable execution: Ingest, Design, Compile, Execute, Audit. Learn how Ferrum builds deterministic AI decision systems." />
+		<link rel="canonical" href="http://my-ferrum-site.s3-website-us-west-1.amazonaws.com/how-it-works" />
+		<link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+		
+		<!-- Open Graph -->
+		<meta property="og:title" content="How It Works | Ferrum Data Works" />
+		<meta property="og:description" content="From business logic to auditable execution: Ingest, Design, Compile, Execute, Audit." />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="http://my-ferrum-site.s3-website-us-west-1.amazonaws.com/how-it-works" />
+		
+		<!-- Twitter Card -->
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:title" content="How It Works | Ferrum Data Works" />
+		<meta name="twitter:description" content="From business logic to auditable execution: Ingest, Design, Compile, Execute, Audit." />
+
+		<!-- Schema.org JSON-LD -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			"itemListElement": [{
+				"@type": "ListItem",
+				"position": 1,
+				"name": "Home",
+				"item": "http://my-ferrum-site.s3-website-us-west-1.amazonaws.com/"
+			},{
+				"@type": "ListItem",
+				"position": 2,
+				"name": "How It Works",
+				"item": "http://my-ferrum-site.s3-website-us-west-1.amazonaws.com/how-it-works"
+			}]
+		}
+		</script>
+
 		<link href="../_app/immutable/assets/0.CEKsbleC.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.iIZN2tar.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/B7N9y5Ot.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/DducnThf.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/B1FHrEXL.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.T3SzHaIW.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/DXagZ70N.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/BAxSKYF6.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/WV7PHaGy.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/CsFJ3omo.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/0.DkD84Q83.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/4.BIjxg08P.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/DQhv2Mmt.js">
 	</head>
-	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents"><!--[--><!--[--><!----><nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-2"><div class="container"><a class="navbar-brand d-flex align-items-center" href="/"><svg class="brand-logo" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="logoGrad1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#7C3AED"></stop><stop offset="100%" stop-color="#06B6D4"></stop></linearGradient><linearGradient id="logoGrad2" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" stop-color="#06B6D4"></stop><stop offset="100%" stop-color="#22C55E"></stop></linearGradient><filter id="logoGlow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2" result="blur"></feGaussianBlur><feMerge><feMergeNode in="blur"></feMergeNode><feMergeNode in="SourceGraphic"></feMergeNode></feMerge></filter></defs><g filter="url(#logoGlow)"><path d="M24 4L42 14V34L24 44L6 34V14L24 4Z" stroke="url(#logoGrad1)" stroke-width="2" fill="none" opacity="0.6"></path><path d="M24 12L34 18V30L24 36L14 30V18L24 12Z" stroke="url(#logoGrad2)" stroke-width="2" fill="rgba(124,58,237,0.15)"></path><circle cx="24" cy="24" r="4" fill="url(#logoGrad1)"></circle><path d="M24 20V12M24 28V36" stroke="url(#logoGrad2)" stroke-width="1.5" opacity="0.8"></path><path d="M20.5 22L14 18M27.5 26L34 30" stroke="url(#logoGrad1)" stroke-width="1.5" opacity="0.8"></path><path d="M27.5 22L34 18M20.5 26L14 30" stroke="url(#logoGrad2)" stroke-width="1.5" opacity="0.8"></path><circle cx="24" cy="12" r="2" fill="#7C3AED"></circle><circle cx="34" cy="18" r="2" fill="#06B6D4"></circle><circle cx="34" cy="30" r="2" fill="#22C55E"></circle><circle cx="24" cy="36" r="2" fill="#06B6D4"></circle><circle cx="14" cy="30" r="2" fill="#7C3AED"></circle><circle cx="14" cy="18" r="2" fill="#22C55E"></circle></g></svg> <span class="brand-name">FERRUM DATA WORKS</span></a> <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button> <div class="collapse navbar-collapse" id="nav"><ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2"><li class="nav-item"><a class="nav-link text-muted-2" href="/solutions">Solutions</a></li> <li class="nav-item"><a class="nav-link text-muted-2" href="/how-it-works">How it works</a></li> <li class="nav-item"><a class="nav-link text-muted-2" href="/security">Security</a></li> <li class="nav-item"><a class="nav-link text-muted-2" href="/contact">Contact</a></li> <li class="nav-item ms-lg-2"><a class="btn btn-outline-soft rounded-pill px-3" href="/contact">Talk to an engineer</a></li> <li class="nav-item ms-lg-2"><a class="btn btn-gradient rounded-pill px-3" href="/contact">Get started</a></li></ul></div></div></nav> <!----><section id="how"><div class="container"><div class="row g-4 align-items-start"><div class="col-lg-5"><h2 class="fw-semibold">How it works</h2> <p class="lead">Practical engineering steps. Minimal disruption. Clear performance outcomes.</p> <div class="glass rounded-4 p-4"><div class="d-flex gap-3 align-items-start"><i class="bi bi-check2-circle fs-4"></i> <div><div class="fw-semibold">We start with the bottleneck</div> <div class="text-muted-2 small">Measure latency, access patterns, cacheability, and
-                                retrieval needs before touching architecture.</div></div></div> <div class="d-flex gap-3 align-items-start mt-3"><i class="bi bi-check2-circle fs-4"></i> <div><div class="fw-semibold">Then we build the data plane</div> <div class="text-muted-2 small">Redis read models, streaming updates, and retrieval
-                                indexes aligned to your workflows.</div></div></div> <div class="d-flex gap-3 align-items-start mt-3"><i class="bi bi-check2-circle fs-4"></i> <div><div class="fw-semibold">Finally: AI integration that is testable</div> <div class="text-muted-2 small">Tool-calling, validation, and evaluation so results are
-                                deterministic and auditable.</div></div></div></div> <div class="mt-4 card-dark rounded-4 p-4"><h4 class="h6 fw-semibold mb-3"><i class="bi bi-graph-up-arrow me-2 icon-brand-b"></i>What we measure</h4> <div class="row g-3"><div class="col-6"><div class="text-muted-2 small"><div class="fw-semibold text-white">P99 Latency</div> Before &amp; after benchmarks</div></div> <div class="col-6"><div class="text-muted-2 small"><div class="fw-semibold text-white">Cache Hit Rate</div> Memory efficiency metrics</div></div> <div class="col-6"><div class="text-muted-2 small"><div class="fw-semibold text-white">Retrieval Accuracy</div> RAG evaluation scores</div></div> <div class="col-6"><div class="text-muted-2 small"><div class="fw-semibold text-white">Throughput</div> Requests per second</div></div></div></div> <div class="mt-4 card-dark rounded-4 p-4"><h4 class="h6 fw-semibold mb-3"><i class="bi bi-clock-history me-2 icon-brand-a"></i>Typical timeline</h4> <div class="d-flex justify-content-between text-muted-2 small"><div class="text-center"><div class="fw-semibold text-white">Week 1-2</div> Assessment</div> <div class="text-center"><div class="fw-semibold text-white">Week 3-6</div> Build &amp; Test</div> <div class="text-center"><div class="fw-semibold text-white">Week 7-8</div> Deploy &amp; Tune</div></div> <div class="mt-3 timeline-bar"></div></div> <div class="mt-4 text-muted-2 small"><i class="bi bi-people me-1"></i> Engineering-led delivery. No handoffs to offshore teams. Direct access to the engineers building your system.</div></div> <div class="col-lg-7 how-right-col"><div class="row g-4"><div class="col-md-6"><div class="p-4 rounded-4 card-dark lift h-100"><div class="pill mb-3"><i class="bi bi-1-circle"></i> Assess</div> <h3 class="h5">Latency + Data Flow Review</h3> <p class="text-muted-2 mb-0">Identify hot paths, read/write patterns, bottlenecks, and the right “in-memory”
-                                boundaries.</p></div></div> <div class="col-md-6"><div class="p-4 rounded-4 card-dark lift h-100"><div class="pill mb-3"><i class="bi bi-2-circle"></i> Build</div> <h3 class="h5">Redis Data Plane</h3> <p class="text-muted-2 mb-0">Caching strategy, read models, streams, and indexes engineered for predictable
-                                performance.</p></div></div> <div class="col-md-6"><div class="p-4 rounded-4 card-dark lift h-100"><div class="pill mb-3"><i class="bi bi-3-circle"></i> Integrate</div> <h3 class="h5">AI Workflows &amp; Tools</h3> <p class="text-muted-2 mb-0">Connect models to retrieval, validation, and execution — tested end-to-end.</p></div></div> <div class="col-md-6"><div class="p-4 rounded-4 card-dark lift h-100"><div class="pill mb-3"><i class="bi bi-4-circle"></i> Deploy</div> <h3 class="h5">Production &amp; Air-Gapped Options</h3> <p class="text-muted-2 mb-0">On-prem or cloud. Secure local LLM deployments when data cannot leave the
-                                environment.</p></div></div></div> <div class="mt-4 glass rounded-4 p-4"><div class="d-flex align-items-center gap-2 mb-2"><i class="bi bi-quote fs-4 icon-brand-c"></i> <div class="fw-semibold">Typical outcome</div></div> <div class="text-muted-2 fst-italic">"We didn't replace anything critical — we placed a memory-first data plane in front of it,
-                        and now retrieval + AI workflows run in real time."</div></div></div></div></div></section><!----><!----> <footer class="footer py-4"><div class="container"><div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-2"><div class="text-muted-2 small">© <span id="year">2025</span> Ferrum Data Works. All rights reserved.</div> <div class="d-flex gap-3 small text-muted-2"><a href="/solutions" class="text-decoration-none">Solutions</a> <a href="/how-it-works" class="text-decoration-none">How it works</a> <a href="/security" class="text-decoration-none">Security</a> <a href="/contact" class="text-decoration-none">Contact</a></div></div></div></footer><!----><!--]--> <!--[!--><!--]--><!--]-->
-			
-			<script>
-				{
-					__sveltekit_1veh7ax = {
-						base: new URL("..", location).pathname.slice(0, -1)
-					};
+	<body>
+		<div style="display: contents">
+			<!-- Navigation -->
+			<nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-2">
+				<div class="container">
+					<a class="navbar-brand d-flex align-items-center" href="../">
+						<svg class="brand-logo" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<defs>
+								<linearGradient id="logoGrad1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#7C3AED"></stop><stop offset="100%" stop-color="#06B6D4"></stop></linearGradient>
+								<linearGradient id="logoGrad2" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" stop-color="#06B6D4"></stop><stop offset="100%" stop-color="#22C55E"></stop></linearGradient>
+							</defs>
+							<path d="M24 4L42 14V34L24 44L6 34V14L24 4Z" stroke="url(#logoGrad1)" stroke-width="2" fill="none" opacity="0.6"></path>
+							<path d="M24 12L34 18V30L24 36L14 30V18L24 12Z" stroke="url(#logoGrad2)" stroke-width="2" fill="rgba(124,58,237,0.15)"></path>
+							<circle cx="24" cy="24" r="4" fill="url(#logoGrad1)"></circle>
+						</svg>
+						<span class="brand-name">FERRUM DATA WORKS</span>
+					</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+					<div class="collapse navbar-collapse" id="nav">
+						<ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+							<li class="nav-item"><a class="nav-link text-muted-2" href="../solutions">Solutions</a></li>
+							<li class="nav-item"><a class="nav-link text-muted-2" href="../how-it-works">How it works</a></li>
+							<li class="nav-item"><a class="nav-link text-muted-2" href="../security">Security</a></li>
+							<li class="nav-item"><a class="nav-link text-muted-2" href="../contact">Contact</a></li>
+							<li class="nav-item ms-lg-2"><a class="btn btn-outline-soft rounded-pill px-3" href="../contact">Talk to an engineer</a></li>
+							<li class="nav-item ms-lg-2"><a class="btn btn-gradient rounded-pill px-3" href="../contact">Get started</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
 
-					const element = document.currentScript.parentElement;
+			<!-- Hero -->
+			<header class="bg-hero noise">
+				<div class="container py-5">
+					<div class="row">
+						<div class="col-lg-8">
+							<h1 class="display-5 fw-semibold">The Decision Workflow Lifecycle</h1>
+							<p class="lead text-muted-2">From business logic to auditable execution in six steps.</p>
+						</div>
+					</div>
+				</div>
+			</header>
 
-					Promise.all([
-						import("../_app/immutable/entry/start.iIZN2tar.js"),
-						import("../_app/immutable/entry/app.T3SzHaIW.js")
-					]).then(([kit, app]) => {
-						kit.start(app, element, {
-							node_ids: [0, 4],
-							data: [null,null],
-							form: null,
-							error: null
-						});
-					});
-				}
-			</script>
+			<!-- Architecture Overview -->
+			<section class="py-5">
+				<div class="container">
+					<h2 class="fw-semibold mb-4">Architecture: Ingest → Design → Compile → Execute → Audit</h2>
+					<div class="row g-4">
+						<div class="col-md-6 col-lg-4">
+							<div class="card-dark rounded-4 p-4 h-100 lift">
+								<div class="pill mb-3"><i class="bi bi-1-circle"></i> Ingest</div>
+								<h4 class="h6">Data arrives from your systems</h4>
+								<p class="text-muted-2 small mb-0">Databases, APIs, event streams. Redis Data Integration or lightweight adapters normalize it.</p>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-4">
+							<div class="card-dark rounded-4 p-4 h-100 lift">
+								<div class="pill mb-3"><i class="bi bi-2-circle"></i> Object Library</div>
+								<h4 class="h6">Typed, validated inputs/outputs</h4>
+								<p class="text-muted-2 small mb-0">No loose JSON. No string parsing. Every field validated before processing.</p>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-4">
+							<div class="card-dark rounded-4 p-4 h-100 lift">
+								<div class="pill mb-3"><i class="bi bi-3-circle"></i> Flow Design</div>
+								<h4 class="h6">Visual editor for business logic</h4>
+								<p class="text-muted-2 small mb-0">Compose rules, decisions, and AI checkpoints. No code required.</p>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-4">
+							<div class="card-dark rounded-4 p-4 h-100 lift">
+								<div class="pill mb-3"><i class="bi bi-4-circle"></i> Compile</div>
+								<h4 class="h6">Deterministic bytecode</h4>
+								<p class="text-muted-2 small mb-0">Flows become executable graphs. No runtime interpretation. Zero surprises.</p>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-4">
+							<div class="card-dark rounded-4 p-4 h-100 lift">
+								<div class="pill mb-3"><i class="bi bi-5-circle"></i> Execution</div>
+								<h4 class="h6">Redis Streams orchestrate</h4>
+								<p class="text-muted-2 small mb-0">State machines execute. Decisions are immutable. Audit trails automatic.</p>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-4">
+							<div class="card-dark rounded-4 p-4 h-100 lift">
+								<div class="pill mb-3"><i class="bi bi-6-circle"></i> Artifacts</div>
+								<h4 class="h6">Results + Evidence</h4>
+								<p class="text-muted-2 small mb-0">Decisions written to RedisJSON, downstream systems, and live dashboards.</p>
+							</div>
+						</div>
+					</div>
+					<div class="mt-4 glass rounded-4 p-4">
+						<p class="text-muted-2 mb-0"><i class="bi bi-info-circle me-2"></i><strong>Why this matters:</strong> Each layer is intentional. No ambiguity. No surprises at 3 AM.</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Data Integration: The RDI Question -->
+			<section class="py-5" style="background: rgba(255,255,255,0.02);">
+				<div class="container">
+					<h2 class="fw-semibold mb-4">Data Integration: The RDI Question</h2>
+					<p class="text-muted-2 mb-4">You have 20 years of data in Oracle, Postgres, Snowflake. A flow needs applicant credit history. Does it call the database directly? No—that's blocking, slow, and stateless.</p>
+					<div class="row g-4">
+						<div class="col-md-6">
+							<div class="card-dark rounded-4 p-4 h-100">
+								<h4 class="h5 mb-3"><i class="bi bi-database-fill-gear icon-brand-a me-2"></i>Option A: Redis Data Integration (Enterprise)</h4>
+								<p class="text-muted-2 small">If you run Redis Enterprise, RDI provides CDC connectors to your legacy databases. Data syncs to Redis in real-time. Flows query Redis (in-memory, sub-millisecond). Old data becomes a local copy. New data updates it continuously.</p>
+								<p class="text-muted-2 small mb-0"><strong>Cost:</strong> Part of Redis Enterprise licensing. <strong>Setup:</strong> Configuration-driven.</p>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="card-dark rounded-4 p-4 h-100">
+								<h4 class="h5 mb-3"><i class="bi bi-plug-fill icon-brand-b me-2"></i>Option B: Lightweight Adapters (OSS)</h4>
+								<p class="text-muted-2 small">You don't need RDI if you're building once. We write thin integration layers: REST API translators, scheduled syncs, event stream consumers (Kafka → Redis).</p>
+								<p class="text-muted-2 small mb-0"><strong>Cost:</strong> Our time to build (part of engagement). Your infrastructure only.</p>
+							</div>
+						</div>
+					</div>
+					<div class="mt-4 glass rounded-4 p-4">
+						<p class="mb-0"><strong>Result:</strong> <span class="text-muted-2">Both approaches normalize data into Redis. Flows don't know or care which you chose. The architecture is agnostic to integration.</span></p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Type Safety -->
+			<section class="py-5">
+				<div class="container">
+					<h2 class="fw-semibold mb-4">Inputs and Outputs as Typed Objects</h2>
+					<div class="row g-4">
+						<div class="col-lg-6">
+							<div class="card-dark rounded-4 p-4 h-100">
+								<h4 class="h6 mb-3">Example: Loan Application Input</h4>
+								<pre class="text-muted-2 small mb-0" style="background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 0.5rem; overflow-x: auto;">
+Input Object: LoanApplication
+  - applicant_id: UUID (required)
+  - credit_score: 300–850 (required)
+  - annual_income: USD currency (required)
+  - employment_status: enum (required)
+  - loan_amount: USD currency (required)
+  - loan_term_months: 6–360 (required)
+  - existing_debt_ratio: 0–100% (required)</pre>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="card-dark rounded-4 p-4 h-100">
+								<h4 class="h6 mb-3">Example: Underwriting Decision Output</h4>
+								<pre class="text-muted-2 small mb-0" style="background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 0.5rem; overflow-x: auto;">
+Output Object: UnderwritingDecision
+  - decision: enum [approved, denied, escalate]
+  - rationale: text (required)
+  - approved_amount: USD (conditional)
+  - conditions: list[text] (optional)
+  - audit_timestamp: ISO 8601 (auto)
+  - model_version: semver (auto)</pre>
+							</div>
+						</div>
+					</div>
+					<div class="row g-3 mt-4">
+						<div class="col-md-3"><div class="text-muted-2 small"><i class="bi bi-check-circle-fill check-icon me-2"></i>Flows cannot proceed without valid inputs</div></div>
+						<div class="col-md-3"><div class="text-muted-2 small"><i class="bi bi-check-circle-fill check-icon me-2"></i>Outputs guaranteed consistent</div></div>
+						<div class="col-md-3"><div class="text-muted-2 small"><i class="bi bi-check-circle-fill check-icon me-2"></i>Audit logs queryable</div></div>
+						<div class="col-md-3"><div class="text-muted-2 small"><i class="bi bi-check-circle-fill check-icon me-2"></i>Type mismatches fail fast</div></div>
+					</div>
+				</div>
+			</section>
+
+			<!-- The Visual Design Problem -->
+			<section class="py-5" style="background: rgba(255,255,255,0.02);">
+				<div class="container">
+					<h2 class="fw-semibold mb-4">The Visual Design Problem and How We Solve It</h2>
+					<p class="text-muted-2 mb-4">No enterprise has 12 months to teach engineers "decision flow language." Your business stakeholders understand decisions—they make them daily. They just can't code.</p>
+					<p class="text-muted-2 mb-4">We inverted the problem. Instead of "write code that expresses decisions," we use visual flow design: nodes for rules, branches for conditions, AI checkpoints, loops, parallel execution. You design. We compile to bytecode. No runtime interpretation. No ambiguity.</p>
+					
+					<div class="row g-4">
+						<div class="col-md-6">
+							<div class="card-dark rounded-4 p-4 h-100">
+								<h4 class="h6 mb-3">Why compilation matters</h4>
+								<ul class="text-muted-2 small mb-0">
+									<li class="mb-2">Interpreted workflows fail at runtime (in production)</li>
+									<li class="mb-2">Compiled flows fail at design time (in testing)</li>
+									<li class="mb-2">We validate all paths, detect dead code, catch type mismatches</li>
+									<li class="mb-2">Generate deterministic hashes (same flow = same hash)</li>
+									<li>For compliance: "which version decided this?" → specific bytecode hash</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="card-dark rounded-4 p-4 h-100">
+								<h4 class="h6 mb-3">Versioning</h4>
+								<p class="text-muted-2 small">Each flow becomes a composable, versionable unit of business logic. You change a threshold, you get a new version (v2.1.1). Old decisions stay reproducible under v2.1.0. No "this rule used to be X."</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Compilation -->
+			<section class="py-5">
+				<div class="container">
+					<h2 class="fw-semibold mb-4">From Design to Executable</h2>
+					<p class="text-muted-2 mb-4">Flows are not interpreted at runtime. They are <strong>compiled</strong>.</p>
+					<div class="row g-4">
+						<div class="col-md-6">
+							<div class="card-dark rounded-4 p-4 h-100">
+								<h4 class="h6 mb-3">What compilation does</h4>
+								<ul class="text-muted-2 small mb-0">
+									<li class="mb-2">Validates all paths (no dead code, no missing branches)</li>
+									<li class="mb-2">Optimizes execution (reorder steps, cache queries)</li>
+									<li class="mb-2">Generates audit metadata</li>
+									<li class="mb-2">Creates deterministic hashes (same flow = same hash)</li>
+									<li>Outputs bytecode or optimized dependency graph</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="card-dark rounded-4 p-4 h-100">
+								<h4 class="h6 mb-3">Why it matters</h4>
+								<ul class="text-muted-2 small mb-0">
+									<li class="mb-2">Zero runtime surprises</li>
+									<li class="mb-2">Impossible to accidentally change logic mid-execution</li>
+									<li class="mb-2">Compiled flows are versioned and immutable</li>
+									<li>Rollback is trivial (switch version flag)</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Execution -->
+			<section class="py-5" style="background: rgba(255,255,255,0.02);">
+				<div class="container">
+					<h2 class="fw-semibold mb-4">Deterministic, Auditable Decision Execution</h2>
+					<div class="row g-4 mb-4">
+						<div class="col-md-6">
+							<h4 class="h6 mb-3">How it works</h4>
+							<ol class="text-muted-2 small">
+								<li class="mb-2"><strong>Trigger:</strong> Event arrives (API, queue, scheduled). Written to Redis Stream.</li>
+								<li class="mb-2"><strong>Consumer Group:</strong> Execution engine reads, guarantees at-least-once processing.</li>
+								<li class="mb-2"><strong>State Machine:</strong> Compiled flow executes. Each step writes to Streams (immutable log).</li>
+								<li class="mb-2"><strong>Queries:</strong> Flow queries RedisJSON for inputs, cached rules, AI models.</li>
+								<li><strong>Output:</strong> Decision written to Streams and stored in RedisJSON.</li>
+							</ol>
+						</div>
+						<div class="col-md-6">
+							<h4 class="h6 mb-3">Why Streams instead of Kafka?</h4>
+							<ul class="text-muted-2 small">
+								<li class="mb-2">In-memory, sub-millisecond, still persistent</li>
+								<li class="mb-2">Latency matters more than geo-distributed failover</li>
+								<li class="mb-2">If you run Redis, no additional tool needed</li>
+								<li>Complete history stored in Redis; no separate audit DB</li>
+							</ul>
+						</div>
+					</div>
+					<div class="card-dark rounded-4 p-4">
+						<h4 class="h6 mb-3">Compliance and Auditability</h4>
+						<p class="text-muted-2 small mb-3">Compliance is not a feature you bolt on. It's the architecture. Regulatory queries become trivial.</p>
+						<p class="text-muted-2 small mb-2"><em>"Show me all loan denials from Q4 where credit score was < 650."</em></p>
+						<pre class="text-muted-2 small mb-0" style="background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 0.5rem; overflow-x: auto;">
+SELECT decision FROM redis_decisions
+WHERE flow = "underwriting:v2.1.0"
+  AND outcome = "denied"
+  AND credit_score < 650
+  AND date BETWEEN Q4_start AND Q4_end</pre>
+						<p class="text-muted-2 small mt-3 mb-0">Returns: 347 decisions. For each, you have: applicant ID, exact inputs, exact rules that fired, exact model output, timestamp, duration. Evidence complete.</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- AI Integration -->
+			<section class="py-5">
+				<div class="container">
+					<h2 class="fw-semibold mb-4">Where AI Fits (And Where It Doesn't)</h2>
+					<div class="row g-4">
+						<div class="col-md-6">
+							<div class="card-dark rounded-4 p-4 h-100">
+								<h4 class="h5 mb-3"><i class="bi bi-check-circle-fill check-icon me-2"></i>AI goes here</h4>
+								<ul class="text-muted-2 small mb-0">
+									<li class="mb-2"><strong>Classification:</strong> "Is this fraud?"</li>
+									<li class="mb-2"><strong>Extraction:</strong> "What is customer intent?"</li>
+									<li class="mb-2"><strong>Ranking:</strong> "Rank tickets by urgency"</li>
+									<li class="mb-2"><strong>Recommendation:</strong> "What product to suggest?"</li>
+									<li><strong>Content Moderation:</strong> "Policy violation?"</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="card-dark rounded-4 p-4 h-100">
+								<h4 class="h5 mb-3"><i class="bi bi-x-circle text-danger me-2"></i>AI does NOT go here</h4>
+								<ul class="text-muted-2 small mb-0">
+									<li class="mb-2"><strong>Writing business logic:</strong> Encode rules instead</li>
+									<li class="mb-2"><strong>Making binary decisions:</strong> Use rules + AI confidence</li>
+									<li><strong>Generating audit-critical text:</strong> Generate from rules</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="mt-4 glass rounded-4 p-4">
+						<p class="mb-0"><strong>Pattern:</strong> <span class="text-muted-2">AI as Advisor. Your business logic decides. AI informs. The combination is auditable.</span></p>
+					</div>
+				</div>
+			</section>
+
+			<!-- CTA -->
+			<section class="py-5" style="background: rgba(255,255,255,0.02);">
+				<div class="container">
+					<div class="glass rounded-4 p-5 text-center">
+						<h2 class="fw-semibold mb-3">Ready to Build Your Decision System?</h2>
+						<p class="lead text-muted-2 mb-4">90 days from concept to production. Let's map your first workflow.</p>
+						<div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
+							<a class="btn btn-gradient btn-lg rounded-pill px-4" href="../contact">Talk to an engineer</a>
+							<a class="btn btn-outline-soft btn-lg rounded-pill px-4" href="../solutions">See solutions</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Footer -->
+			<footer class="footer py-4">
+				<div class="container">
+					<div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+						<div class="text-muted-2 small">© 2025 Ferrum Data Works. All rights reserved.</div>
+						<div class="d-flex gap-3 small text-muted-2">
+							<a href="../solutions" class="text-decoration-none">Solutions</a>
+							<a href="../how-it-works" class="text-decoration-none">How it works</a>
+							<a href="../security" class="text-decoration-none">Security</a>
+							<a href="../contact" class="text-decoration-none">Contact</a>
+						</div>
+					</div>
+				</div>
+			</footer>
 		</div>
 	</body>
 </html>

@@ -1,0 +1,38 @@
+# Ferrum Data Works
+
+> Deterministic AI Decision Systems for Enterprise
+
+## The Problem: The Decision System Trilemma
+Enterprises face an impossible choice for decision systems:
+1. **Black-box AI:** Fast but opaque. Regulatory liability.
+2. **Hardcoded Rules:** Auditable but brittle. Slow to change.
+3. **Enterprise AI Platforms:** 18-month integration hell.
+
+## The Solution: Determinism + Fluidity
+Ferrum builds **deterministic decision systems that are also adaptive**.
+- **Architectural Insight:** Decisions are logical computations, not neural predictions.
+- **The Inversion:** AI is an *advisor* (confidence score), not the decision-maker. The rule decides.
+- **Execution Substrate:** Built on Redis Streams for sub-millisecond latency and immutable audit logs.
+
+## Core Capabilities
+- **Visual Design:** Business stakeholders design flows; we compile them to bytecode.
+- **Compliance:** "Show me all denials from Q4" is a trivial SQL-like query.
+- **Data Integration:** Redis Data Integration (RDI) or lightweight adapters.
+- **ROI:** 90 days to production. 200-500% Year 1 ROI.
+
+## Architecture
+1. **Ingest:** Normalize data from DBs, APIs, and streams.
+2. **Design:** Visual workflow editor.
+3. **Compile:** Deterministic bytecode. Zero runtime surprises.
+4. **Execute:** Redis Streams state machine.
+5. **Audit:** Complete evidence chain for every decision.
+
+## Use Cases
+- **Credit Decisioning:** Explainable loan approvals.
+- **Claims Triage:** Automated routing and fraud detection.
+- **Compliance:** Continuous KYC/AML monitoring.
+- **Content Moderation:** Hybrid AI/Human workflows.
+
+## Contact
+- **Website:** http://my-ferrum-site.s3-website-us-west-1.amazonaws.com
+- **Email:** hello@ferrumdata.works
